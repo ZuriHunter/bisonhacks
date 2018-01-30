@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "krungthrep";
+  src: url("../fonts/Krungthep.ttf");
+}
+
+h1, h2, h3, h4 {
+  font-family: "krungthrep";
+  font-size: 35px;
+  color: #083961 !important;
+}
+
+.hu-reg-btn {
+  font-family: "krungthrep" !important;
+  font-size: 20px;
+  background-color: #F45254;
+}
+.intro-hu {
+  display: table;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-image: url('../img/abstract.gif');
+  /* background: #5EBE82; */
+  background-color: white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.intro-hu .intro-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+.intro-hu .intro-body p {
+  font-size: 20px;
+}
+.intro-hu .intro-body .brand-heading {
+  font-size: 125px;
+  color: white;
+}
+@media (max-width: 767px) {
+  .intro-hu .intro-body .brand-heading {
+    font-size: 80px;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .intro-hu {
+    height: 100%;
+  }
+  .intro-hu .small {
+    font-size: 10px;
+    color: white;
+  }
+  .intro-hu h2 {
+    font-size: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+  .intro-hu .banner-social-buttons {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .intro-hu {
+    height: 100%;
+    padding: 0;
+  }
+  .intro-hu .intro-body .brand-heading {
+    font-size: 125px;
+  }
+  .intro-hu .intro-body .brand-heading .small {
+    font-size: 40px;
+    color: white;
+  }
+}
