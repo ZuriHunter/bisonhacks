@@ -1,4 +1,4 @@
-# Bison Hacks 
+# Bison Hacks
 
 # Prerequisites
 * node
@@ -6,8 +6,8 @@
 
 # To Run Web App
 * `npm install`
-* `gulp`
-* `gulp browserSync`
+* `npm build`
+* `npm start`
 * In browser go to http://localhost:8000
 
 # Need Help??
