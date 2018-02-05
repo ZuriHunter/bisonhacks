@@ -9,6 +9,11 @@ h1, h2, h3, h4 {
   color: #083961 !important;
 }
 
+#u {
+  width: 70%;
+  height: auto;
+}
+
 .hu-reg-btn {
   font-family: "krungthrep" !important;
   font-size: 20px;
@@ -73,4 +78,33 @@ h1, h2, h3, h4 {
     font-size: 40px;
     color: white;
   }
+}
+
+.navbar .navbar-collapse {
+  text-align: left !important;
+  color: #083961 !important;
+  font-family: "krungthrep";
+}
+
+.navbar-custom a{
+  color: #083961 !important;
+  font-size: 20px;
+}
+
+.hu-container {
+  margin-left: 0px !important;
+}
+
+a:after {
+  border-bottom: 2px solid #083961 !important;
+  transition: 0.4s !important;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+}
+
+a:hover:after {
+  width: 100%;
 }
