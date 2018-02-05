@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:200,400,700');
+
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+
+h3{
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.white h2{
+    color: #fff !important;
+}
+
+.red {
+    color: e51937;
+}
+
+.left {
+    text-align: left;
+}
+
+.center{
+    text-align: center;
+}
+
+.intro-text {
+    margin-top: 80px;
+}
+
+.thin{
+    font-weight: 300;
+    letter-spacing: 2px;
+}

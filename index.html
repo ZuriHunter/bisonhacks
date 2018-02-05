@@ -17,12 +17,34 @@
   <!-- <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Bungee|Rubik+One|Proza+Libre" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <link href="css/grayscale.min.css" rel="stylesheet">
+  <link href="css/grayscale.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+    
+    
+    <style>
+    /* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -2;
+}
+        
+/* Add some content at the bottom of the video/page */
+.content {
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    color: #f1f1f1;
+    width: 100%;
+}
+        .blue-force{
+            background-color: #2F6FB9;
+        }
+    </style>
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
   <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
@@ -42,9 +64,6 @@
             <a class="page-scroll" href="#faq">FAQ</a>
           </li>
           <li>
-            <a href="#">Past Winners</a>
-          </li>
-          <li>
             <a class="page-scroll" href="#schedule">Schedule</a>
           </li>
           <li>
@@ -55,20 +74,31 @@
     </div>
   </nav>
 
+    
+    
+
   <!-- Intro Header -->
   <header class="intro">
     <div class="intro-body">
       <div class="container">
+        <!-- The video -->
+        <video autoplay muted loop id="myVideo">
+          <source src="videos/discussing_features.mp4" type="video/mp4">
+        </video>
         <div class="row">
           <div id="uholder">
-            <img id="u" src="img/H.png" />
-            <h1 class="brand-heading front">Bison Hacks</h1>
-            <h2>  Howard University
-            </h2>
-            <h2>
-              March 30-31, 2018
-            </h2>
-            <ul class="list-inline banner-social-buttons">
+               <h1 class="brand-heading front red">Bison Hacks</h1>
+                <h2 class="white">  Howard University
+                </h2>
+                <h2 class="white">
+                  March 30-31, 2018
+                </h2>
+        
+          </div>
+        </div>
+          
+        <div class="row center">
+                        <ul class="list-inline banner-social-buttons">
               <!-- <li>
                 <a href="https://www.facebook.com/umiamiaiaa/" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
               </li> -->
@@ -78,19 +108,20 @@
                 <a href="https://www.facebook.com/BisonHacks.us/"
                  class="btn btn-default btn-lg"> <i class="fa fa-facebook fa-fw"></i><span class="network-name">Like us on Facebook</span></a>
               </li>
-            </ul>
-          </div>
+            </ul>  
+          
         </div>
       </div>
     </div>
   </header>
+
 
   <!-- Register -->
   <section id="register" class="content-section orange-section">
     <div class="container content-body">
       <div class="row">
         <div class="col-sm-8 col-sm-offset-2">
-          <h2>BisonHacks 2018</h2>
+          <h2 class="white">BisonHacks 2018</h2>
 
           <p>
             BisonHacks is a 24 hour hackathon hosted by Howard University Department of Computer Information Systems.
@@ -160,46 +191,7 @@
         </div>
       </div>
       <br  /><br />
-      <div class="row">
-        <h2 class="text-center">Category 1</h2>
-      </div>
-      <div class="row cat-1">
-        <div class="row">
 
-
-          <div class="col-sm-6">
-            <img id="vmware-logo" src="img/vmware.jpg" />
-          </div>
-          <div class="col-sm-6">
-            <img id="ibm-logo" src="img/ibm.jpg" />
-          </div>
-          <div class="col-sm-6">
-            <img id="falafel-logo" src="img/falafel.jpg" />
-          </div>
-          <div class="col-sm-6">
-            <img id="launchpad-logo" src="img/launchpad.png" />
-          </div>
-          <div class="col-sm-6">
-            <img id="sg-logo" src="img/studentgov.png" />
-          </div>
-
-
-          <div class="col-sm-6">
-            <img id="coursera-logo" src="img/coursera.png" />
-          </div>
-
-
-
-        </div>
-
-        <div class="row">
-
-          <div>
-            <img id="safac-logo" src="img/safac.gif" />
-          </div>
-
-        </div>
-      </div>
       <br / >
       <br / >
       <div class="row text-center">
@@ -220,11 +212,11 @@
   </section>
 
   <!-- FAQ -->
-  <section id="faq" class="content-section orange-section">
+  <section id="faq" class="content-section orange-section blue-force">
     <div class="container content-body">
 
         <div class="row text-center" >
-          <h2>Frequently Asked Questions</h2>
+          <h2 class="white">Frequently Asked Questions</h2>
           <br />
         </div>
         <div class="row">
@@ -288,9 +280,8 @@
           <br />
 
       </div>
-
-
-
+        </div>
+      </div>
   </section>
 
   <!-- Schedule -->
@@ -320,11 +311,14 @@
       </div>
     </div>
   </section>
+        
   <footer>
     <div class="container text-center">
       <p>Copyright &copy; Howard University Department of Computer Information Systems 2018</p>
     </div>
   </footer>
+        
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
