@@ -118,9 +118,12 @@ a:hover:after {
   height: 100%;
   background-color: #FFFFFF;
 }
+.shop-cards {
+  height: 95%;
+}
 
 .shop:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 32px 64px 0 rgba(0,0,0,0.2);
 }
 
 .workshop {
