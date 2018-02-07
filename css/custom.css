@@ -1,3 +1,33 @@
+/* h3{
+    font-weight: 300;
+    letter-spacing: 2px;
+} */
+
+.white h2{
+    color: #fff !important;
+}
+
+.red {
+    color: e51937;
+}
+
+.left {
+    text-align: left;
+}
+
+.center{
+    text-align: center;
+}
+
+.intro-text {
+    margin-top: 80px;
+}
+
+.thin{
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
 /* GENERAL */
 @font-face {
   font-family: "krungthrep";
@@ -7,7 +37,7 @@
 h1, h2, h3, h4 {
   font-family: "krungthrep";
   font-size: 35px;
-  color: #083961 !important;
+  color: #083961;
 }
 
 .center {
@@ -33,6 +63,7 @@ p {
 @media (min-width: 768px){
   .navbar-custom.top-nav-collapse {
     background-color:#FEFEFE;
+    color: #083961 !important;
   }
 }
 
@@ -40,6 +71,15 @@ p {
   #mlh-trust-badge {
     display: none !important;
   }
+  .navbar-custom .nav li a {
+    background-color: #FEFEFE !important;
+    color: #083961 !important;
+  }
+}
+
+.navbar-custom .nav li.active a{
+  background-color: transparent !important;
+  color: #083961 !important;
 }
 
 .navbar-toggle{
@@ -47,10 +87,17 @@ p {
   color: #043763 !important;
 }
 
-div.navbar-collapse.navbar-main-collapse.collapse.in{
-  background-color: #FEFEFE !important;
+div.navbar-collapse.navbar-main-collapse.collapse.in {
+  /* background-color: #FEFEFE !important; */
+  /* color: #083961 !important; */
   /* padding: 0; */
 }
+
+
+.top-nav-collapse .navbar-custom .nav li a{
+  color: #083961 !important;
+}
+
 button.navbar-toggle{
   margin-right: 0px;
 }
@@ -58,7 +105,6 @@ button.navbar-toggle{
 .active {
   background-color: #FEFEFE !important;
 }
-
 /* NAVBAR */
 
 /* GENERAL */
@@ -73,14 +119,14 @@ button.navbar-toggle{
   font-size: 20px;
   background-color: #F45254;
 }
+.intro {
+background-image: url("https://www.transparenttextures.com/patterns/dark-matter.png");
+}
 .intro-hu {
   display: table;
   width: 100%;
   height: 100%;
   color: white;
-  background-image: url('../img/abstract.gif');
-  /* background: #5EBE82; */
-  background-color: white;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -136,12 +182,12 @@ button.navbar-toggle{
 
 .navbar .navbar-collapse {
   text-align: left !important;
-  color: #083961 !important;
+  color: #FEFEFE !important;
   font-family: "krungthrep";
 }
 
 .navbar-custom a{
-  color: #083961 !important;
+  color: #FEFEFE !important;
   font-size: 20px;
 }
 
