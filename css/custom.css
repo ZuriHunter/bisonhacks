@@ -40,6 +40,9 @@ p {
   #mlh-trust-badge {
     display: none !important;
   }
+  .navbar-custom .nav li a {
+    background-color: #FEFEFE !important;
+  }
 }
 
 .navbar-toggle{
