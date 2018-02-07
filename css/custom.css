@@ -47,7 +47,7 @@ p {
   color: #043763 !important;
 }
 
-div.navbar-collapse.navbar-main-collapse.collapse.in {
+div.navbar-collapse.navbar-main-collapse.collapse.in{
   background-color: #FEFEFE !important;
   /* padding: 0; */
 }
@@ -211,11 +211,6 @@ a:hover:after {
     height: 100%;
     padding: 0px;
   }
-
-  /* #maps {
-    height: 100%;
-    width: auto;
-  } */
 
   @media (max-width: 768px) {
     #remove-map {
