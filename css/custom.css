@@ -264,9 +264,33 @@ a:hover:after {
 
     }
   }
-
 /* REGISTER SECTION */
+
+/* SPONSOR SECTION */
+  #sponsors img {
+    width: 90% !important;
+    text-align: center;
+  }
+
+  .sponsor-logos > .col-md-6 {
+    text-align: center;
+  }
+
+  .content-section h1 {
+    text-align: center;
+  }
+
+  .content-section h4 {
+    text-align: center;
+  }
+/* SPONSOR SECTION */
 
 footer {
   padding: 18px 0px;
+}
+
+.powered {
+  text-align: center !important;
+  background-color: #FEFEFE !important;
+  z-index: 50 !important;
 }
