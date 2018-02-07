@@ -1,13 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:200,400,700');
-
-body{
-    font-family: 'Work Sans', sans-serif;
-}
-
-h3{
+/* h3{
     font-weight: 300;
     letter-spacing: 2px;
-}
+} */
 
 .white h2{
     color: #fff !important;
@@ -32,4 +26,247 @@ h3{
 .thin{
     font-weight: 300;
     letter-spacing: 2px;
+}
+
+/* GENERAL */
+@font-face {
+  font-family: "krungthrep";
+  src: url("../fonts/Krungthep.ttf");
+}
+
+h1, h2, h3, h4 {
+  font-family: "krungthrep";
+  font-size: 35px;
+  color: #083961;
+}
+
+.center {
+  text-align: center;
+}
+
+p {
+   text-align: none;
+}
+
+.full {
+  height: 100%;
+}
+
+.blue-theme {
+  background-color: #043763;
+}
+.red-letter {
+  color: #F45254;
+}
+
+/* NAVBAR */
+@media (min-width: 768px){
+  .navbar-custom.top-nav-collapse {
+    background-color:#FEFEFE;
+    color: #083961 !important;
+  }
+}
+
+@media(max-width: 769px){
+  #mlh-trust-badge {
+    display: none !important;
+  }
+  .navbar-custom .nav li a {
+    background-color: #FEFEFE !important;
+    color: #083961 !important;
+  }
+}
+
+.navbar-custom .nav li.active a{
+  background-color: transparent !important;
+  color: #083961 !important;
+}
+
+.navbar-toggle{
+  background-color: #FEFEFE !important;
+  color: #043763 !important;
+}
+
+div.navbar-collapse.navbar-main-collapse.collapse.in {
+  /* background-color: #FEFEFE !important; */
+  /* color: #083961 !important; */
+  /* padding: 0; */
+}
+
+
+.top-nav-collapse .navbar-custom .nav li a{
+  color: #083961 !important;
+}
+
+button.navbar-toggle{
+  margin-right: 0px;
+}
+
+.active {
+  background-color: #FEFEFE !important;
+}
+/* NAVBAR */
+
+/* GENERAL */
+
+#u {
+  width: 70%;
+  height: auto;
+}
+
+.hu-reg-btn {
+  font-family: "krungthrep" !important;
+  font-size: 20px;
+  background-color: #F45254;
+}
+.intro {
+background-image: url("https://www.transparenttextures.com/patterns/dark-matter.png");
+}
+.intro-hu {
+  display: table;
+  width: 100%;
+  height: 100%;
+  color: white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.intro-hu .intro-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+.intro-hu .intro-body p {
+  font-size: 20px;
+}
+.intro-hu .intro-body .brand-heading {
+  font-size: 125px;
+  color: white;
+}
+@media (max-width: 767px) {
+  .intro-hu .intro-body .brand-heading {
+    font-size: 80px;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .intro-hu {
+    height: 100%;
+  }
+  .intro-hu .small {
+    font-size: 10px;
+    color: white;
+  }
+  .intro-hu h2 {
+    font-size: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+  .intro-hu .banner-social-buttons {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .intro-hu {
+    height: 100%;
+    padding: 0;
+  }
+  .intro-hu .intro-body .brand-heading {
+    font-size: 125px;
+  }
+  .intro-hu .intro-body .brand-heading .small {
+    font-size: 40px;
+    color: white;
+  }
+}
+
+.navbar .navbar-collapse {
+  text-align: left !important;
+  color: #FEFEFE !important;
+  font-family: "krungthrep";
+}
+
+.navbar-custom a{
+  color: #FEFEFE !important;
+  font-size: 20px;
+}
+
+.hu-container {
+  margin-left: 0px !important;
+}
+
+a:after {
+  border-bottom: 2px solid #083961 !important;
+  transition: 0.4s !important;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+}
+
+a:hover:after {
+  width: 100%;
+}
+
+/* REGISTER SECTION */
+#register {
+  color: #FEFEFE;
+}
+.google-maps {
+    padding-bottom: 75%; // This is the aspect ratio
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .center > p {
+    font-family: "krungthrep";
+    padding-bottom: 10px;
+    font-size: 25px;
+  }
+
+  #register label {
+    padding-top: 20px;
+  }
+
+  .register-info > label {
+    color: #F45254;
+    font-size: 25px;
+  }
+
+  #register {
+    height:100%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .register-info {
+    padding: 60px 100px 75px 100px;
+  }
+
+  .map-container {
+    background-color: #043763;
+    height: 100%;
+    padding: 0px;
+  }
+
+  @media (max-width: 768px) {
+    #remove-map {
+      display: none;
+
+    }
+  }
+
+/* REGISTER SECTION */
+
+footer {
+  padding: 18px 0px;
 }
