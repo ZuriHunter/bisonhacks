@@ -303,6 +303,51 @@ a:hover:after {
   }
 /* SPONSOR SECTION */
 
+/* FAQ SECTION */
+.tab-content >.active {
+  background-color: #FEFEFE !important;
+  color: #043763;
+}
+.faq-tab {
+  background-color: #043763 !important;
+  color: #FFFFFF;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+   color: #F45254 !important;
+   background-color: #FEFEFE !important;
+  /* color: #043763 !important */
+  /* background-color: #F45254 !important; */
+}
+.nav-tabs>li>a {
+  border: 1px solid #FEFEFE;
+}
+
+ a:hover {
+  color: #F45254;
+}
+
+.faq-heading{
+  color: #F45254 !important;
+  text-align: left !important;
+  font-size: 22px !important;
+}
+
+.faq-heading>a {
+  color:  #F45254 !important;
+  transition: none !important;
+  text-decoration: none !important;
+
+}
+
+.faq-group {
+  font-size: 30px !important;
+  color: #043763 !important;
+  text-align: right !important;
+  padding-right: 20px;
+}
+/* FAQ SECTION */
+
 footer {
   padding: 18px 0px;
 }
