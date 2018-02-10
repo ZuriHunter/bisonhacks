@@ -346,6 +346,10 @@ a:hover:after {
   text-align: right !important;
   padding-right: 20px;
 }
+
+.faq-panel {
+  padding-right: 25px;
+}
 /* FAQ SECTION */
 
 footer {
