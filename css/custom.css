@@ -120,7 +120,9 @@ button.navbar-toggle{
   background-color: #F45254;
 }
 .intro {
-background-image: url("https://www.transparenttextures.com/patterns/dark-matter.png");
+  background-image: url("https://www.transparenttextures.com/patterns/dark-matter.png");
+  background: transparent !important;
+  /* opacity: .5; */
 }
 .intro-hu {
   display: table;
@@ -282,15 +284,106 @@ a:hover:after {
     padding: 0px;
   }
 
+  .fas {
+    color: #043763 !important;
+  }
+
   @media (max-width: 768px) {
     #remove-map {
       display: none;
     }
   }
 
+  .about-highlight {
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .about-content {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-align: left;
+  }
 /* REGISTER SECTION */
+
+/* SPONSOR SECTION */
+  #sponsors img {
+    width: 90% !important;
+    text-align: center;
+  }
+
+  .sponsor-logos > .col-md-6 {
+    text-align: center;
+  }
+
+  .content-section h1 {
+    text-align: center;
+  }
+
+  .content-section h4 {
+    text-align: center;
+  }
+/* SPONSOR SECTION */
+
+/* FAQ SECTION */
+.tab-content >.active {
+  background-color: #FEFEFE !important;
+  color: #043763;
+}
+.faq-tab {
+  background-color: #043763 !important;
+  color: #FFFFFF;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+   color: #F45254 !important;
+   background-color: #FEFEFE !important;
+  /* color: #043763 !important */
+  /* background-color: #F45254 !important; */
+}
+.nav-tabs>li>a {
+  border: 1px solid #FEFEFE;
+}
+
+ a:hover {
+  color: #F45254;
+}
+
+.faq-heading{
+  color: #F45254 !important;
+  text-align: left !important;
+  font-size: 22px !important;
+}
+
+.faq-heading>a {
+  color:  #F45254 !important;
+  transition: none !important;
+  text-decoration: none !important;
+
+}
+
+.faq-group {
+  font-size: 30px !important;
+  color: #043763 !important;
+  text-align: right !important;
+  padding-right: 20px;
+}
+
+.faq-panel {
+  padding-right: 25px;
+}
+/* FAQ SECTION */
 
 footer {
   padding: 18px 0px;
 >>>>>>> master
+}
+
+.powered {
+  text-align: center !important;
+  background-color: #FEFEFE !important;
+  z-index: 50 !important;
 }

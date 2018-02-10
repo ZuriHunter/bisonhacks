@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>BisonHacks 2018</title>
   <meta charset="utf-8">
@@ -7,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="">
-  <meta property="og:url"                content="http://www.bisonhacks.com" />
-  <meta property="og:type"               content="website" />
-  <meta property="og:title"              content="BisonHacks 2018" />
-  <meta property="og:description"        content="Howard University's 4th Annual Hackathon" />
-  <meta property="og:image"              content="" />
+  <meta property="og:url" content="http://www.bisonhacks.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="BisonHacks 2018" />
+  <meta property="og:description" content="Howard University's 4th Annual Hackathon" />
+  <meta property="og:image" content="" />
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
+  <link rel="shortcut icon" type="image/x-icon" href="img/bisonhacks-favi.ico" />
   <!-- <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -24,32 +25,36 @@
   <link href="css/custom.css" rel="stylesheet">
 
 
-    <style>
+  <style>
     /* Style the video: 100% width and height to cover the entire window */
-#myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -2;
-}
 
-/* Add some content at the bottom of the video/page */
-.content {
-    position: fixed;
-    bottom: 0;
-    background: #fff;
-    color: #f1f1f1;
-    width: 100%;
-}
-        .blue-force{
-            background-color: #2F6FB9;
-        }
+    #myVideo {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -2;
+      opacity: .7;
+    }
 
+    /* Add some content at the bottom of the video/page */
 
-    </style>
+    .content {
+      position: fixed;
+      bottom: 0;
+      background: #fff;
+      color: #f1f1f1;
+      width: 100%;
+    }
+
+    .blue-force {
+      background-color: #2F6FB9;
+    }
+  </style>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
+
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
   <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
     <div class="container">
@@ -59,13 +64,13 @@
       <div class="collapse navbar-collapse navbar-main-collapse">
         <ul class="nav navbar-nav hu-nav">
           <li>
-            <a class="page-scroll" href="#register">Register</a>
+            <a class="page-scroll" href="#register" style="color: #083961 !important;">Register</a>
           </li>
-          <!-- <li>
-            <a class="page-scroll" href="#sponsors">Sponsors</a>
-          </li> -->
           <li>
-            <a class="page-scroll" href="#bootcamp">Bootcamp Series</a>
+            <a class="page-scroll" href="#sponsors" style="color: #083961 !important;">Sponsors</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#faq" style="color: #083961 !important;">FAQ</a>
           </li>
           <!-- <li>
             <a class="page-scroll" href="#schedule">Schedule</a>
@@ -89,19 +94,19 @@
         <video autoplay muted loop id="myVideo">
           <source src="videos/discussing_features.mp4" type="video/mp4">
         </video>
-          <div class="row">
-              <div class="col-md-6 col-md-offset-3">
-                  <img class="img-responsive main-logo" src="img/logo-w-word.png">
-                  <br><br>
-              </div>
-          </div>
         <div class="row">
-            <div id="uholder">
+          <div class="col-md-6 col-md-offset-3">
+            <img class="img-responsive main-logo" style="z-index: 777 !important;" src="img/logo-word.png">
+            <br><br>
+          </div>
+        </div>
+        <div class="row">
+          <div id="uholder">
 
-               <!--h1 class="brand-heading front red">Bison Hacks</h1--->
-                <h2 class="white" style="color: #FEFEFE !important;">  Howard University
+            <!--h1 class="brand-heading front red">Bison Hacks</h1--->
+            <h2 class="white" style="color: #FEFEFE !important; font-size:">  Howard University
                 </h2>
-                <h2 class="white" style="color: #FEFEFE !important;">
+            <h2 class="white" style="color: #FEFEFE !important;">
                   March 30-31, 2018
                 </h2>
 
@@ -109,19 +114,16 @@
         </div>
 
         <div class="row center">
-                        <ul class="list-inline banner-social-buttons">
-              <!-- <li>
+          <ul class="list-inline banner-social-buttons">
+            <!-- <li>
                 <a href="https://www.facebook.com/umiamiaiaa/" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
               </li> -->
-              <li>
-                <a
-                href="http://eepurl.com/djfh7j"
-                target="_blank"
-                class="btn btn-default btn-lg hu-reg-btn">
+            <li>
+              <a href="http://eepurl.com/djfh7j" target="_blank" class="btn btn-default btn-lg hu-reg-btn">
                   SUBSCRIBE
                 </a>
-              </li>
-            </ul>
+            </li>
+          </ul>
 
         </div>
       </div>
@@ -131,266 +133,724 @@
 
   <!-- Register -->
   <section id="register" class="content-section">
-      <div class="row full">
+    <div class="row full">
 
-        <div class="col-md-6 blue-theme">
-          <div class="register-info">
-            <div class="center">
-              <p>Howard Unviersity's Official Annual Hackathon </p>
-              <p> <span class="red-letter">[</span> Bison Hacks <span class="red-letter">]</span> </p>
-            </div>
+      <div class="col-md-6 blue-theme">
+        <div class="register-info">
+          <div class="center">
+            <p>Howard Unviersity's Official Annual Hackathon </p>
+            <p style="font-size: 20px;"> <span class="red-letter">[</span> Bison Hacks <span class="red-letter">]</span> </p>
+          </div>
 
-            <label>WHERE</label>
-            <p>Howard University School of Business <br/>
-            2600 6th Street NW Washington, DC 20059</p>
+          <label>WHERE</label>
+          <p>Mapbox <br/> 740 15th Street NW Washington, DC 20005</p>
 
-            <label>START</label>
-            <p>March 30, 2018 6:30PM </p>
+          <label>START</label>
+          <p>March 30, 2018 6:30PM </p>
 
-            <label>END</label>
-            <p>March 31, 2018 6:30PM </p>
+          <label>END</label>
+          <p>March 31, 2018 6:30PM </p>
 
-            <label>WHO</label>
-            <p>For students in the DMV area and Howard University students</p>
-            <!-- <br/> -->
-            <br/>
+          <label>WHO</label>
+          <p>For students in the DMV area and Howard University students</p>
+          <!-- <br/> -->
+          <br/>
 
-            <div class="center">
-              <a
-                target="_blank"
-                href="#"
-                class="btn btn-default btn-lg hu-reg-btn">
+          <div class="center">
+            <a target="_blank" href="#" class="btn btn-default btn-lg hu-reg-btn">
                 REGISTER
               </a>
-            </div>
-
           </div>
-        </div>
 
-        <div  id="remove-map" class="col-md-6 map-container">
-          <div class="google-maps">
-            <iframe
-              width="600"
-              height="450"
-              frameborder="0" style="border:0"
-              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAAG1E3VHmTBt50mERccbZr9rkiIlF9KZ0
-                &q=Howard+University+School+of+Business" allowfullscreen>
+        </div>
+      </div>
+
+      <div id="remove-map" class="col-md-6 map-container">
+        <div class="google-maps">
+          <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAAG1E3VHmTBt50mERccbZr9rkiIlF9KZ0
+                &q=740+15th+St+NW,+Washington,+DC+20005" allowfullscreen>
             </iframe>
-          </div>
         </div>
-
       </div>
+
+    </div>
   </section>
 
-  <!-- Register -->
-  <section id="bootcamp" class="content-section workshop">
-    <div class="container content-body" style="background-color: blue;">
-      <div class="row " style="background-color:green; height: 100%;">
-        <div class="col-md-3">
-          <div class="">
-            <h2>Business Pitching</h2>
-            <img class="img-thumbnail" src="https://16815-presscdn-0-13-pagely.netdna-ssl.com/wp-content/uploads/2017/06/iStock-609683672-studying.jpg"/>
-            <p>
-              Don't know how to express your idea to the judge? Come out to our workshop on business pitching!
-            </p>
-            
-            <a
-            href="http://eepurl.com/djfh7j"
-            target="_blank"
-            class="btn btn-default btn-lg hu-reg-btn">
-              SUBSCRIBE
-            </a>
-          </div>
-        </div/>
-        <div class="col-md-3" style="background-color: purple; padding: 10px 10px 10px 10px;">
-          <div class="" style="height: 95%; background-color: red;">
-            <h2> Front-End Development</h2>
-            <img class="img-thumbnail" src="https://16815-presscdn-0-13-pagely.netdna-ssl.com/wp-content/uploads/2017/06/iStock-609683672-studying.jpg"/>
-            <p>
-              Unfamiliar with HTML, CSS and Javascript? Join us as we go over the basics of Front-End development!
-            </p>
-
-            <a
-            href="http://eepurl.com/djfh7j"
-            target="_blank"
-            class="btn btn-default btn-lg hu-reg-btn">
-              SUBSCRIBE
-            </a>
-          </div>
+  <!-- About -->
+  <section class="content-section white-section">
+    <div class="container content-body">
+      <h2 style="font-size: 50px; color: #043763;"> Things about Bison Hacks....</h2>
+      <div class="row center">
+        <div class="col-md-4 about-highlight">
+          Inspiring new journeys and goals.
         </div>
-        <div class="col-md-3">
-          <div class="">
-            <h2> Back-End Development</h2>
-            <img class="img-thumbnail" src="https://16815-presscdn-0-13-pagely.netdna-ssl.com/wp-content/uploads/2017/06/iStock-609683672-studying.jpg"/>
-            <p>
-              Unsure on what carries the business logic of an application? Checkout this bootcamp on Back-End basics!
-            </p>
-
-            <a
-            href="http://eepurl.com/djfh7j"
-            target="_blank"
-            class="btn btn-default btn-lg hu-reg-btn">
-              SUBSCRIBE
-            </a>
-          </div>
+        <div class="col-md-8 about-content">
+          <p>Bison Hacks aims to create an environment where students can share their ideas and bring them to reality with other students who are just as passionate.
+          </p>
         </div>
-        <div class="col-md-3 ">
-          <div class="">
-            <h2>UI/UX Design</h2>
-            <img class="img-thumbnail" src="https://16815-presscdn-0-13-pagely.netdna-ssl.com/wp-content/uploads/2017/06/iStock-609683672-studying.jpg"/>
-            <p>
-              Wonder about how to design your application? Learn about UI/UX fundamentals at our bootcamp!
-            </p>
+      </div>
 
-            <a
-            href="http://eepurl.com/djfh7j"
-            target="_blank"
-            class="btn btn-default btn-lg hu-reg-btn">
-              SUBSCRIBE
-            </a>
-          </div>
+      <div class="row center">
+        <div class="col-md-4 about-highlight">
+          Applying technology with problem solving.
+        </div>
+        <div class="col-md-8 about-content">
+          Technology has the ability to make a huge impact in society and with the diverse backgrounds of our students
+        </div>
+      </div>
+
+      <div class="row center">
+        <div class="col-md-4 about-highlight">
+          Supporting the community.
+        </div>
+        <div class="col-md-8 about-content">
+          <i>Veritas et Utilitas</i>. As a way to fulfill our unviersity motto "Truth and Service", this hackathon is a platform for students to serve their community.
+        </div>
+      </div>
+
+      <div class="row center">
+        <div class="col-md-2">
+          <h5> 24 <br/>Hours</h5>
+          <i class="fas fa-clock fa-4x" style="color: #043763;"></i>
+        </div>
+        <div class="col-md-2">
+          <h5> 100 <br/>Students </h5>
+          <i class="fas fa-users fa-4x" style="color: #043763;"></i>
+        </div>
+        <div class="col-md-2">
+          <h5> 3+ <br/>Universities</h5>
+          <i class="fas fa-university fa-4x" style="color: #043763;"></i>
+        </div>
+        <div class="col-md-2">
+          <h5> $5,000<br/> Total Prize</h5>
+          <i class="fas fa-trophy fa-4x" style="color: #043763;"></i>
+        </div>
+        <div class="col-md-2">
+          <h5> 10+ <br/>Projects </h5>
+          <i class="fas fa-lightbulb fa-4x" style="color: #043763;"></i>
+        </div>
+        <div class="col-md-2">
+          <h5>2 <br/>Activities</h5>
+          <i class="fas fa-puzzle-piece fa-4x" style="color: #043763;"></i>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- Sponsors -->
-  <!-- <section id="sponsors" class="content-section white-section">
-    <div  id="sponsor-position" class="container content-body">
-      <div class="row">
-        <h2 class="text-center">Sponsors</h2>
-      </div>
-      <br / ><br / >
-      <div class="row">
-        <h2 class="text-center">Category 3</h2>
-      </div>
-      <div class="row cat-3">
-        <img id="shure-logo" src="img/shure.png" />
-      </div>
-      <br  /><br />
-      <div class="row">
-        <h2 class="text-center">Category 2</h2>
-      </div>
-
-      <div class="row cat-2">
-        <div class="row">
-          <div class="col-sm-6">
-            <img id="citrix-logo" src="img/citrix.png" />
-          </div>
-          <div class="col-sm-6">
-            <img id="fb-logo" src="img/facebook.png" />
-          </div>
-        </div>
-        <div class="row">
-
-
-          <div class="col-sm-6 col-md-4">
-            <img id="cas-logo" src="img/cas.png" />
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <img id="csc-logo" src="img/csc.jpeg" />
-          </div>
-          <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0">
-            <img id="coe-logo" src="img/coe.png" />
-          </div>
-
-
-        </div>
-      </div>
-      <br  /><br />
-
-      <br / >
-      <br / >
-      <div class="row text-center">
-        <div class="col-sm-10 col-sm-offset-1">
-
-          <h4>Interested in sponsoring BisonHacks?</h4>
-          <p>
-            Check out our <a href="">sponsorship prospectus</a>!
-          </p>
-          <p>Email us at
-            <u><a href=""></a></u>
-            for more information!
-          </p>
-        </div>
-      </div>
-    </div>
-
-  </section> -->
 
   <!-- FAQ -->
-  <!-- <section id="faq" class="content-section orange-section">
+  <section id="faq" class="content-section" style="background-color: #043763;">
     <div class="container content-body">
+      <h1 style="color: #FEFEFE;"> Frequently Asked Questions </h1>
 
-        <div class="row text-center" >
-          <h2 class="white">Frequently Asked Questions</h2>
-          <br />
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="faq-tab" role="presentation" class="active"><a href="#general" aria-controls="general" role="tab" data-toggle="tab" class="faq-tab"><b>General</b></a></li>
+        <li class="faq-tab" role="presentation"><a href="#applying" aria-controls="applying" role="tab" data-toggle="tab" class="faq-tab"><b>Applying</b></a></li>
+        <li class="faq-tab" role="presentation"><a href="#rules" aria-controls="rules" role="tab" data-toggle="tab" class="faq-tab"><b>Rules</b></a></li>
+        <li class="faq-tab" role="presentation"><a href="#logistics" aria-controls="logistics" role="tab" data-toggle="tab" class="faq-tab"><b>Logistics</b></a></li>
+        <li class="faq-tab" role="presentation"><a href="#sponsors" aria-controls="sponsors" role="tab" data-toggle="tab" class="faq-tab"><b>Sponsors</b></a></li>
+      </ul>
+
+      <div class="tab-content" style="color:black !important;">
+        <div role="tabpanel" class="tab-pane active" id="general">
+          <br/><br/>
+          <div class="row" style="color:black !important;">
+            <div class="col-xs-12 col-md-2">
+              <h2 class="faq-group">General</h2>
+            </div>
+            <div class="col-xs-12 col-md-10">
+              <div id="accordion" role="tablist" aria-multiselectable="true">
+
+                <div>
+                  <div role="tab" id="headingApplyOne">
+                    <h4 class="faq-heading">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseApplyOne" aria-expanded="false" aria-controls="collapseOne">
+                        What is a hackathon?
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseApplyOne" class="collapse" role="tabpanel" aria-labelledby="headingApplyOne">
+                    <div class="faq-panel">
+                      A hackathon is a weekend long event where you go all the way from idea to prototype. At the end of BisonHacks, you will pitch your app, website, or whatever prototype you dreamed up, and compete for prizes! Hackathons are a great place to learn quickly
+                      and create something awesome.
+                    </div>
+                  </div>
+                  <br/>
+                </div>
+
+                <div>
+                  <div role="tab" id="headingApplyTwo">
+                    <h4 class="faq-heading">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseApplyTwo" aria-expanded="false" aria-controls="collapseOne">
+                        How much does it cost?
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseApplyTwo" class="collapse" role="tabpanel" aria-labelledby="headingApplyTwo">
+                    <div class="faq-panel">
+                      BisonHacks is completely free for all registered participants! The food is free and all the awesome swag is free.
+                    </div>
+                  </div>
+                  <br/>
+                </div>
+
+                <div>
+                  <div role="tab" id="headingApplyThree">
+                    <h4 class="faq-heading">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseApplyThree" aria-expanded="false" aria-controls="collapseOne">
+                        Will there be food?
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseApplyThree" class="collapse" role="tabpanel" aria-labelledby="headingApplyThree">
+                    <div class="faq-panel">
+                      Absolutely! We have four delicious meals planned with plenty of snacks in between to keep you going for 24 hours.
+                    </div>
+                  </div>
+                  <br/>
+                </div>
+
+                <div>
+                  <div role="tab" id="headingApplyFour">
+                    <h4 class="faq-heading">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseApplyFour" aria-expanded="false" aria-controls="collapseOne">
+                        What should I bring?
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseApplyFour" class="collapse" role="tabpanel" aria-labelledby="headingApplyFour">
+                    <div class="faq-panel">
+                      Bring you, your computer, computer charger, toiletries (toothbrush and toothpaste), and anything else for your hack.
+                    </div>
+                  </div>
+                  <br/>
+                </div>
+
+                <div>
+                  <div role="tab" id="headingApplySix">
+                    <h4 class="faq-heading">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseApplySix" aria-expanded="false" aria-controls="collapseOne">
+                        This is my first hackathon!
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseApplySix" class="collapse" role="tabpanel" aria-labelledby="headingApplySix">
+                    <div class="faq-panel">
+                      You're more than welcome at BisonHacks! We will have workshops during the event and mentors to help you through any troubles. So no matter what your skill level is, we will provide the resources to help you learn.
+                    </div>
+                  </div>
+                  <br/>
+                </div>
+
+                <div>
+                  <div role="tab" id="headingApplyFive">
+                    <h4 class="faq-heading">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseApplyFive" aria-expanded="false" aria-controls="collapseOne">
+                        Do you have a Code of Conduct?
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseApplyFive" class="collapse" role="tabpanel" aria-labelledby="headingApplyFive">
+                    <div class="faq-panel">
+                      Yes! Check out
+                        <b><a style="color:#005030 !important;" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"> MLH's Code of Conduct</b></a>.
+                    </div>
+                  </div>
+                  <br/>
+                </div>
+
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="row">
 
-      <div class="col-sm-4 col-sm-offset-1">
-          <h4> What is a hackathon? </h4>
-          <p> A hackathon is a weekend long event where you go all the way
-            from idea to prototype. At the end of BisonHacks, you will pitch your
-            app, website, or whatever prototype you dreamed up, and compete
-            for prizes! Hackathons are a great place to learn quickly and
-            create something awesome.
-          </p>
-          <br />
+        <div role="tabpanel" class="tab-pane" id="logistics">
+          <br/><br/>
+          <div class="row" style="color:black !important;">
+            <div class="col-xs-12 col-md-2">
+              <h2 class="faq-group">Travel</h2>
+            </div>
+            <div class="col-xs-12 col-md-10">
+              <div id="accordion" role="tablist" aria-multiselectable="true">
 
-          <h4> How much does it cost? </h4>
-          <p>BisonHacks is completely free for all registered participants! The food is free and all the awesome swag is free.
-          </p>
-          <br />
+                <div>
+                  <div role="tab" id="logisticsOne">
+                    <h4 class="faq-heading">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#logisticsApplyOne" aria-expanded="false" aria-controls="collapseOne">
+                        Will there be free parking provided?
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="logisticsApplyOne" class="collapse" role="tabpanel" aria-labelledby="logisticsOne">
+                    <div class="faq-panel">
+                      Unfortunately, there won't be free parking but only street parking.
+                    </div>
+                  </div>
+                  <br/>
+                </div>
 
-          <h4>Will there be food? </h4>
-          <p> Absolutely! We have four delicious meals planned with plenty of
-            snacks in between to keep you going for 24 hours.
-          </p>
-          <br />
+                <div>
+                  <div role="tab" id="logisticsTwo">
+                    <h4 class="faq-heading">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#logisticsApplyTwo" aria-expanded="false" aria-controls="collapseOne">
+                        Is there any travel reimbursement?
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="logisticsApplyTwo" class="collapse" role="tabpanel" aria-labelledby="logisticsTwo">
+                    <div class="faq-panel">
+                      Unfortunately, we will not be offering individual travel reimbursement this year.
+                    </div>
+                  </div>
+                  <br/>
+                </div>
 
-          <h4>Is there any travel reimbursement?</h4>
-          <p>Unfortunately, we will not be offering individual travel reimbursement this year.
-          </p>
-          <br />
+                <div>
+                  <div role="tab" id="logisticsThree">
+                    <h4 class="faq-heading">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#logisticsApplyThree" aria-expanded="false" aria-controls="collapseOne">
+                        What are the closest Metro's to this location?
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="logisticsApplyThree" class="collapse" role="tabpanel" aria-labelledby="logisticsThree">
+                    <div class="faq-panel">
+                      To travel to this location the closest metros are Metro Center and McPherson Square.
+                    </div>
+                  </div>
+                  <br/>
+                </div>
 
-          <h4>Do you have a Code of Conduct?</h4>
-          <p>Yes! Check out
-            <a style="color:#005030;" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"> MLH's Code of Conduct </a>.
-          </p>
-          <br />
+              </div>
+            </div>
+          </div>
 
+          <div class="row">
+            <div class="col-xs-12 col-md-2">
+              <h2 class="faq-group">Event</h2>
+            </div>
+            <div class="col-xs-12 col-md-10">
+              <div id="accordion" role="tablist" aria-multiselectable="true">
+
+                <div>
+                  <div role="tab" id="eventOne">
+                    <h4 class="faq-heading">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#logisticsEventOne" aria-expanded="false" aria-controls="collapseOne">
+                        Will there be other activities other than hacking at this event?
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="logisticsEventOne" class="collapse" role="tabpanel" aria-labelledby="eventOne">
+                    <div class="faq-panel">
+                      Of course! This year, our hacker experience team has planned a bunch of fun events
+                      for attendees to relax. Stay tuned for more info!We will have a small activity
+                      in the midst of the event provided by Major League Hackathon.
+                    </div>
+                  </div>
+                  <br/>
+                </div>
+
+                <div>
+                  <div role="tab" id="eventTwo">
+                    <h4 class="faq-heading">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#logisticsEventTwo" aria-expanded="false" aria-controls="collapseOne">
+                        Do I have to be there for the entire hackathon?
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="logisticsEventTwo" class="collapse" role="tabpanel" aria-labelledby="eventTwo">
+                    <div class="faq-panel">
+                      Due to the security of the building it would be ideal that you stay for the entire event.
+                      However, if you need to leave and comeback please inform the Hackathon Organizers.
+                    </div>
+                  </div>
+                  <br/>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div role="tabpanel" class="tab-pane" id="rules">
+          <br/><br/>
+
+          <div class="row" style="color:black !important;">
+            <div class="col-xs-12 col-md-2">
+              <h2 class="faq-group">Teams</h2>
+            </div>
+            <div class="col-xs-12 col-md-10">
+              <div id="accordion" role="tablist" aria-multiselectable="true">
+
+                <div>
+                  <div role="tab" id="rulesOne">
+                    <h4 class="faq-heading">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#applyingRulesOne" aria-expanded="false" aria-controls="collapseOne">
+                        How many students per a team?
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="applyingRulesOne" class="collapse" role="tabpanel" aria-labelledby="rulesOne">
+                    <div class="faq-panel">
+                      There can be a maximum of 4 students for a team.
+                    </div>
+                  </div>
+                  <br/>
+                </div>
+
+                <div>
+                  <div role="tab" id="rulesTwo">
+                    <h4 class="faq-heading">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#applyingRulesTwo" aria-expanded="false" aria-controls="collapseOne">
+                        What if I can't find a team?
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="applyingRulesTwo" class="collapse" role="tabpanel" aria-labelledby="rulesTwo">
+                    <div class="faq-panel">
+                      That is fine, you have the option to work alone but we highly recommend that you work in a team.
+                    </div>
+                  </div>
+                  <br/>
+                </div>
+
+                <div>
+                  <div role="tab" id="rulesThree">
+                    <h4 class="faq-heading">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#applyingRulesThree" aria-expanded="false" aria-controls="collapseOne">
+                        What are the requirements for a team?
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="applyingRulesThree" class="collapse" role="tabpanel" aria-labelledby="rulesThree">
+                    <div class="faq-panel">
+                      Teams are encouraged to have a mix of business, engineering, and design oriented
+                      students. Diversity is encouraged. However, teams are required to choose a name.
+                    </div>
+                  </div>
+                  <br/>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12 col-md-2">
+              <h2 class="faq-group">Projects</h2>
+            </div>
+            <div class="col-xs-12 col-md-10">
+              <div id="accordion" role="tablist" aria-multiselectable="true">
+
+                <div>
+                  <div role="tab" id="projectOne">
+                    <h4 class="faq-heading">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#applyingProjectOne" aria-expanded="false" aria-controls="collapseOne">
+                        What are the requirements for the project?
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="applyingProjectOne" class="collapse" role="tabpanel" aria-labelledby="projectOne">
+                    <div class="faq-panel">
+                      Team projects can be brainstormed beforehand, but code <b>MUST</b> be written at the event
+                      only. <b><i>Code cannot be brought in from outside the event</i> </b>. Cheating of any kind will <b>not</b> be
+                      tolerated. The project must contain a README within the repository that describes the project.
+                    </div>
+                  </div>
+                  <br/>
+                </div>
+
+                <div>
+                  <div role="tab" id="projectTwo">
+                    <h4 class="faq-heading">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#applyingProjectTwo" aria-expanded="false" aria-controls="collapseOne">
+                        What are some tools that we can use within our project?
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="applyingProjectTwo" class="collapse" role="tabpanel" aria-labelledby="projectTwo">
+                    <div class="faq-panel">
+                      You can use any tool, API, service or language for your team project.
+                    </div>
+                  </div>
+                  <br/>
+                </div>
+
+                <div>
+                  <div role="tab" id="projectThree">
+                    <h4 class="faq-heading">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#applyingProjectThree" aria-expanded="false" aria-controls="collapseOne">
+                        How long are presentations for our project?
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="applyingProjectThree" class="collapse" role="tabpanel" aria-labelledby="projectThree">
+                    <div class="faq-panel">
+                      A 3 min presentation is required during judging, explaining and demonstrating the team’s
+                      application. In addition 1 minute will be allowed for questions.
+                    </div>
+                  </div>
+                  <br/>
+                </div>
+
+                <div>
+                  <div role="tab" id="projectFour">
+                    <h4 class="faq-heading">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#applyingProjectFour" aria-expanded="false" aria-controls="collapseOne">
+                        Where do we submit our project?
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="applyingProjectFour" class="collapse" role="tabpanel" aria-labelledby="projectFour">
+                    <div class="faq-panel">
+                      All projects must be submitted into our Bison Hacks DevPost by March 31, 2018 at 2:00PM.
+                    </div>
+                  </div>
+                  <br/>
+                </div>
+
+                <div>
+                  <div role="tab" id="projectFive">
+                    <h4 class="faq-heading">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#applyingProjectFive" aria-expanded="false" aria-controls="collapseOne">
+                        What format can our team project be?
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="applyingProjectFive" class="collapse" role="tabpanel" aria-labelledby="projectFive">
+                    <div class="faq-panel">
+                      Your project can be a mobile application, web application or IoT project.  The project must fit into the theme
+                      set for the event.
+                    </div>
+                  </div>
+                  <br/>
+                </div>
+
+                <div>
+                  <div role="tab" id="projectSix">
+                    <h4 class="faq-heading">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#applyingProjectSix" aria-expanded="false" aria-controls="collapseOne">
+                        What are the items that are not permitted in our projects?
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="applyingProjectSix" class="collapse" role="tabpanel" aria-labelledby="projectSix">
+                    <div class="faq-panel">
+                      Projects must not contain any advertisement or solicitation.
+                      Projects must not contain anything that is or may be construed as:
+                      <ul>
+                        <li>Threatening, harassing, degrading or hateful.</li>
+                        <li>Defamatory</li>
+                        <li>Fraudulent or tortious</li>
+                        <li>Obscene, indecent or otherwise objectionable; or (v) protected by copyright,
+                        trademark or other proprietary right without the express prior consent of the owner
+                        of such right;</li>
+                      </ul>
+
+                      Projects must not contain any material that would give rise to criminal or civil
+                      liability or that encourages conduct that constitutes a criminal offense; and
+                      Projects must otherwise comply in all respects with these Rules and the Policies.
+                    </div>
+                  </div>
+                  <br/>
+                </div>
+
+
+
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12 col-md-2">
+              <h2 class="faq-group">Judges</h2>
+            </div>
+            <div class="col-xs-12 col-md-10">
+              <div id="accordion" role="tablist" aria-multiselectable="true">
+                Coming Soon!
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12 col-md-2">
+              <h2 class="faq-group">Prizes</h2>
+            </div>
+            <div class="col-xs-12 col-md-10">
+              <div id="accordion" role="tablist" aria-multiselectable="true">
+                Coming Soon!
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div role="tabpanel" class="tab-pane" id="sponsors">
+          <br/><br/>
+
+          <div class="row" style="color:black !important;">
+            <div class="col-xs-12 col-md-2">
+              <h2 class="faq-group">Sponsors</h2>
+            </div>
+            <div class="col-xs-12 col-md-10">
+              <div id="accordion" role="tablist" aria-multiselectable="true">
+
+                <div>
+                  <div role="tab" id="sponsorOne">
+                    <h4 class="faq-heading">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#applyingSponsorOne" aria-expanded="false" aria-controls="collapseOne">
+                        How do I sponsor this event?
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="applyingSponsorOne" class="collapse" role="tabpanel" aria-labelledby="sponsorOne">
+                    <div class="faq-panel">
+                      First! Thank you for wishing to sponsor our hackathon! To sponsor our event you can view our sponsorhsip package <a href="">here</a> and send an email to
+                      cobishu@gmail.com.
+                    </div>
+                  </div>
+                  <br/>
+                </div>
+
+                <div>
+                  <div role="tab" id="sponsorTwo">
+                    <h4 class="faq-heading">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#applyingSponsorTwo" aria-expanded="false" aria-controls="collapseOne">
+                        What does the funds cover for this event?
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="applyingSponsorTwo" class="collapse" role="tabpanel" aria-labelledby="sponsorTwo">
+                    <div class="faq-panel">
+                      The funds goes towards food, prizes and the swag for the hackathon. We go into more detail within our sponsorship package <a href="">here</a>.
+                    </div>
+                  </div>
+                  <br/>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div role="tabpanel" class="tab-pane" id="applying">
+          <br/><br/>
+          <div class="row" style="color:black !important;">
+            <div class="col-xs-12 col-md-2">
+              <h2 class="faq-group">Students</h2>
+            </div>
+            <div class="col-xs-12 col-md-10">
+              <div id="accordion" role="tablist" aria-multiselectable="true">
+
+                <div>
+                  <div role="tab" id="applyingOne">
+                    <h4 class="faq-heading">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#applyingApplyingOne" aria-expanded="false" aria-controls="collapseOne">
+                        Who can attend this hackathon?
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="applyingApplyingOne" class="collapse" role="tabpanel" aria-labelledby="applyingOne">
+                    <div class="faq-panel">
+                      Bison Hacks is open to Howard University students and anyone who is 18 years or older (we will be checking ID) and is currently enrolled in college or university
+                      with a valid student ID. International students are invited to apply and attend, but we cannot guarantee full
+                      travel reimbursement.
+                    </div>
+                  </div>
+                  <br/>
+                </div>
+
+                <div>
+                  <div role="tab" id="applyingTwo">
+                    <h4 class="faq-heading">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#applyingApplyingTwo" aria-expanded="false" aria-controls="collapseOne">
+                        Are walk-ins welcomed?
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="applyingApplyingTwo" class="collapse" role="tabpanel" aria-labelledby="applyingTwo">
+                    <div class="faq-panel">
+                      Due to the location we are only allowed to have attendees who have registered for the hackathon.
+                      Therefore, if you are interested attending this event please register at this <a href="">link</a>.
+                    </div>
+                  </div>
+                  <br/>
+                </div>
+
+                <div>
+                  <div role="tab" id="applyingThree">
+                    <h4 class="faq-heading">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#applyingApplyingThree" aria-expanded="false" aria-controls="collapseOne">
+                        Are graduate students welcomed to attend?
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="applyingApplyingThree" class="collapse" role="tabpanel" aria-labelledby="applyingThree">
+                    <div class="faq-panel">
+                      Howard University graduate student's are welcomed to register for this hackathon.
+                    </div>
+                  </div>
+                  <br/>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12 col-md-2">
+              <h2 class="faq-group">Mentors</h2>
+            </div>
+            <div class="col-xs-12 col-md-10">
+              <div id="accordion" role="tablist" aria-multiselectable="true">
+
+                <div>
+                  <div role="tab" id="applyingFour">
+                    <h4 class="faq-heading">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#applyingApplyingFour" aria-expanded="false" aria-controls="collapseOne">
+                        I am interested in being a mentor, how do I sign up to be one?
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="applyingApplyingFour" class="collapse" role="tabpanel" aria-labelledby="applyingFour">
+                    <div class="faq-panel">
+                      That is great! We welcome any help! To sign up as a mentor you can simply select "Mentor" on the form within
+                      the registration link <a href="">here</a>.
+                    </div>
+                  </div>
+                  <br/>
+                </div>
+
+                <div>
+                  <div role="tab" id="applyingFive">
+                    <h4 class="faq-heading">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#applyingApplyingFive" aria-expanded="false" aria-controls="collapseOne">
+                        Do I have to have a technological background in order to be a mentor?
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="applyingApplyingFive" class="collapse" role="tabpanel" aria-labelledby="applyingFive">
+                    <div class="faq-panel">
+                      Although, it is ideal but it is not a requirement. We welcome anyone who have experience in entrepreneurship, marketing,
+                      finance and technology.
+                    </div>
+                  </div>
+                  <br/>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
 
       </div>
 
-      <div class="col-sm-4 col-sm-offset-2">
-          <h4>What should I bring?</h4>
-          <p>Bring you, your computer, computer charger, toiletries (toothbrush
-            and toothpaste), and anything
-            else for your hack.
-          </p>
-          <br />
-
-          <h4>This is my first hackathon! </h4>
-          <p>You're more than welcome at BisonHacks!
-            We will have workshops during the event and mentors to help you
-            through any troubles. So no matter what your skill level is, we will
-            provide the resources to help you learn.
-          </p>
-          <br />
-          <h4>How big are teams and what if I don’t have one?</h4>
-          <p>Gather your friends, meet some peeps at opening,
-            or attend our team-creation event right after opening ceremonies.
-             No worries about knowing anyone beforehand. BisonHacks is for creating
-             new connections and new people from around the states. Maximum
-             4 people per team.</p>
-          <br />
-
+      <br/>
+      <br/>
+      <div>
+        <h4 style="color:#FEFEFE;"> Still have questions?</h4>
+        <p style="color:#FEFEFE;" class="center">Email cobishu@gmail.com</p>
       </div>
-
-
-
-  </section> -->
+  </section>
 
   <!-- Schedule -->
   <!-- <section id="schedule" class="content-section white-section">
@@ -400,6 +860,48 @@
 
     </div></div>
   </section> -->
+
+  <!-- Sponsors -->
+  <section id="sponsors" class="content-section white-section">
+    <br/>
+    <br/>
+    <div class="row center">
+      <div class="col-md-12">
+        <h1 class="text-center">Sponsors</h1>
+      </div>
+    </div>
+    <br/>
+    <div class="row sponsor-logos center">
+      <div class="col-md-12">
+        <img style="width: 50% !important;" src="./img/mapbox-logo-color.png"/>
+      </div>
+    </div>
+    <br/>
+    <br/>
+    <div class="row sponsor-logos">
+      <div class="col-md-6">
+        <img style="width:40% !important;" src="./img/emerging-coders.png" />
+      </div>
+      <div class="col-md-6 ">
+        <img src="./img/cobislogo.png" />
+      </div>
+    </div>
+    <br/>
+    <br/>
+    <div class="row text-center">
+      <div class="col-md-12">
+        <h4>Interested in sponsoring Bison Hacks?</h4>
+        <p>
+          Check out our <a href="">sponsorship prospectus</a>!
+        </p>
+        <p>Email us at
+          <u><a href="">cobishu@gmail.com</a></u> for more information!
+        </p>
+      </div>
+    </div>
+    <!-- </div> -->
+
+  </section>
 
   <!-- Contact -->
   <!-- <section id="contact" class="content-section">
@@ -419,6 +921,19 @@
       </div>
     </div>
   </section> -->
+
+  <!-- <section class="content-section"> -->
+  <div style=" background-color: #FEFEFE; text-align:center;">
+    <a href="http://www.mlh.io">
+      <img style="width: 20%;" src="./img/mlh-logo.png" />
+    </a>
+    <br/>
+    <p style="padding:0; margin:0;">Bison Hacks is powered by Major League Hackathon</p>
+    <br/>
+    <br/>
+  </div>
+  <!-- </section> -->
+
   <footer>
     <div class="container text-center">
       <p>Copyright &copy; Howard University Department of Computer Information Systems 2018</p>
@@ -432,8 +947,7 @@
 
   <script>
     var mymap = L.map('maps').setView([51.505, -0.09], 13);
-    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw',
-    {
+    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
       maxZoom: 18,
       attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' + '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' + 'Imagery © <a href="http://mapbox.com">Mapbox</a>',
       id: 'mapbox.streets'
@@ -442,53 +956,57 @@
 
   <script>
     events = [
-      ['Check-In and Lunch','Shalala Student Center (SC) Grand Ballroom','11:00am - 12:00pm'],
-      ['Opening Ceremony','SC Grand Ballroom','12:00 - 1:00pm'],
-      ['Hacking Begins!','SC Grand Ballroom','1:00pm'],
-      ['Team Formation','SC Side Ballroom','1:00 - 2:00pm'],
-      ['Workshop: Git and Development Environment Setup','SC Side Ballroom','2:00 - 3:00pm'],
-      ['Workshop: Containers and Virtualization with VMWare','SC Side Ballroom','3:00 - 4:00pm'],
-      ['Workshop: Integration of Software in Audio Products','SC Side Ballroom','4:00 - 5:00pm'],
-      ['Workshop: Android Development with Firebase','SC Side Ballroom','5:00 - 6:00pm'],
-      ['Dinner','SC Grand Ballroom','6:00 - 7:00pm'],
-      ['Patio Jammin\'','University Center Patio','6:00 - 7:00pm'],
-      ['Workshop: Web Development with Firebase','SC Side Ballroom','8:00 - 9:00pm'],
-      ['ACC Championship: Miami vs. Clemson','SC Grand Ballroom','8:00 - 11:00pm'],
-      ['Werewolf and Season T-Shirts with MLH!!','SC Side Ballroom','9:00 - 10:00pm'],
-      ['Salsa Lessons by UM SalsaCraze','Moss Terrace','10:00 - 11:00pm'],
-      ['Workshop: Intermediate Python','SC Side Ballroom','11:00pm - 12:00am'],
-      ['Late Night Snack','SC Grand Ballroom','12:00 - 1:00am'],
-      ['Videogames with UM Videogame Club','SC Side Ballroom','12:00 - 3:00am'],
-      ['Breakfast','SC Grand Ballroom','8:00 - 9:00am'],
-      ['BisonHacks T-Shirts!','SC Grand Ballroom','9:00am'],
-      ['Workshop: Digital Privacy and Security','SC Side Ballroom','10:00 - 11:00am'],
-      ['Workshop: Intro to Virtual Reality','SC Side Ballroom','11:00am - 12:00pm'],
-      ['Devpost closes: Submit your hacks!','SC Grand Ballroom','12:00pm'],
-      ['Workshop: Pitching Your Hack with UM Launchpad','SC Side Ballroom','12:00 - 1:00pm'],
-      ['Lunch','SC Grand Ballroom','12:30 - 1:30pm'],
-      ['Expo','SC Side Ballroom','1:30 - 2:30pm'],
-      ['Awards','SC Grand Ballroom','3:00 - 4:00pm']
+      ['Check-In and Lunch', 'Shalala Student Center (SC) Grand Ballroom', '11:00am - 12:00pm'],
+      ['Opening Ceremony', 'SC Grand Ballroom', '12:00 - 1:00pm'],
+      ['Hacking Begins!', 'SC Grand Ballroom', '1:00pm'],
+      ['Team Formation', 'SC Side Ballroom', '1:00 - 2:00pm'],
+      ['Workshop: Git and Development Environment Setup', 'SC Side Ballroom', '2:00 - 3:00pm'],
+      ['Workshop: Containers and Virtualization with VMWare', 'SC Side Ballroom', '3:00 - 4:00pm'],
+      ['Workshop: Integration of Software in Audio Products', 'SC Side Ballroom', '4:00 - 5:00pm'],
+      ['Workshop: Android Development with Firebase', 'SC Side Ballroom', '5:00 - 6:00pm'],
+      ['Dinner', 'SC Grand Ballroom', '6:00 - 7:00pm'],
+      ['Patio Jammin\'', 'University Center Patio', '6:00 - 7:00pm'],
+      ['Workshop: Web Development with Firebase', 'SC Side Ballroom', '8:00 - 9:00pm'],
+      ['ACC Championship: Miami vs. Clemson', 'SC Grand Ballroom', '8:00 - 11:00pm'],
+      ['Werewolf and Season T-Shirts with MLH!!', 'SC Side Ballroom', '9:00 - 10:00pm'],
+      ['Salsa Lessons by UM SalsaCraze', 'Moss Terrace', '10:00 - 11:00pm'],
+      ['Workshop: Intermediate Python', 'SC Side Ballroom', '11:00pm - 12:00am'],
+      ['Late Night Snack', 'SC Grand Ballroom', '12:00 - 1:00am'],
+      ['Videogames with UM Videogame Club', 'SC Side Ballroom', '12:00 - 3:00am'],
+      ['Breakfast', 'SC Grand Ballroom', '8:00 - 9:00am'],
+      ['BisonHacks T-Shirts!', 'SC Grand Ballroom', '9:00am'],
+      ['Workshop: Digital Privacy and Security', 'SC Side Ballroom', '10:00 - 11:00am'],
+      ['Workshop: Intro to Virtual Reality', 'SC Side Ballroom', '11:00am - 12:00pm'],
+      ['Devpost closes: Submit your hacks!', 'SC Grand Ballroom', '12:00pm'],
+      ['Workshop: Pitching Your Hack with UM Launchpad', 'SC Side Ballroom', '12:00 - 1:00pm'],
+      ['Lunch', 'SC Grand Ballroom', '12:30 - 1:30pm'],
+      ['Expo', 'SC Side Ballroom', '1:30 - 2:30pm'],
+      ['Awards', 'SC Grand Ballroom', '3:00 - 4:00pm']
       // ['event','location','time'],
     ]
 
-    function makeScheduleEvent (i) {
+    function makeScheduleEvent(i) {
       if (i == 0) {
         $('#innerschedule').append('<br / ><br /><h2>Saturday</h2>');
       }
       if (i == 15) {
         $('#innerschedule').append('<br / ><br /><h2>Sunday</h2>');
       }
-        $('#innerschedule').append('<div class="row"><div class="col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-1 col-lg-5 col-lg-offset-2"> \
+      $('#innerschedule').append('<div class="row"><div class="col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-1 col-lg-5 col-lg-offset-2"> \
             <h5>' + events[i][0] + '</h5> \
-            <span>' + events[i][1] + '</span> \
+            <span>' + events[i][1] +
+        '</span> \
           </div><div class="schedule-time col-sm-10 col-sm-offset-1  col-md-4 col-md-offset-0 col-lg-3 col-lg-offset-0"> \
             <h5>' + events[i][2] + '</h5> \
         </div></div>');
     }
-    for (i=0; i<events.length; i++) {
+    for (i = 0; i < events.length; i++) {
       makeScheduleEvent(i);
     }
   </script>
-  <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000;@media(max-width: 767px){width:1000px;right:0px;max-width:20px;min-width:10px;position:fixed;width:10%;z-index:10000}" href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg" alt="Major League Hacking 2018 Hackathon Season" style="width:100%"></a>
+  <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000;@media(max-width: 767px){width:1000px;right:0px;max-width:20px;min-width:10px;position:fixed;width:10%;z-index:10000}"
+    href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg" alt="Major League Hacking 2018 Hackathon Season" style="width:100%"></a>
 </body>
+
 </html>
+<!DOCTYPE html>

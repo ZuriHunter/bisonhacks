@@ -10,7 +10,6 @@ body {
   color: #767676;
   background-attachment: fixed;
   background-color: #EEEEEE;
-  overflow-x: hidden;
 }
 html {
   width: 100%;
@@ -60,7 +59,7 @@ a:focus {
   background-color: transparent;
 }
 .navbar-custom .navbar-toggle {
-  color: #003a63;
+  color: #5f6062;
   background-color: #303037;
   font-size: 12px;
 }
@@ -75,8 +74,7 @@ a:focus {
   outline: none;
 }
 .navbar-custom a {
-  color: #fff;
-  font-weight: 500;
+  color: white;
 }
 @media (max-width: 767px) {
   .navbar-custom .nav {
@@ -94,7 +92,7 @@ a:focus {
   transition: background 0.3s ease-in-out;
 }
 .navbar-custom .nav li a:hover {
-  color: rgba (0, 58, 99, .7);
+  color: rgba(255, 255, 255, 0.8);
   outline: none;
   background-color: transparent;
 }
@@ -124,7 +122,7 @@ a:focus {
   }
   .navbar-custom.top-nav-collapse {
     padding: 0;
-    background: #003a63;
+    background: #303037;
   }
   .navbar-custom.top-nav-collapse a {
     color: white;
@@ -134,9 +132,12 @@ a:focus {
   display: table;
   width: 100%;
   height: 100%;
-  color: #fff;
-   background-color: rgba(4, 59, 97, .4);
-background-image: url("https://www.transparenttextures.com/patterns/dark-matter.png");
+  color: white;
+  background: #5f6062;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 .intro .intro-body {
   display: table-cell;
@@ -146,8 +147,8 @@ background-image: url("https://www.transparenttextures.com/patterns/dark-matter.
   font-size: 20px;
 }
 .intro .intro-body .brand-heading {
-  font-size: 100px;
-  color: #003a63;
+  font-size: 125px;
+  color: white;
 }
 @media (max-width: 767px) {
   .intro .intro-body .brand-heading {
@@ -178,10 +179,7 @@ background-image: url("https://www.transparenttextures.com/patterns/dark-matter.
     padding: 0;
   }
   .intro .intro-body .brand-heading {
-    font-size: 90px;
-    color: #e51937;
-    text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-                 0px -5px 35px rgba(255,255,255,0.3);
+    font-size: 125px;
   }
   .intro .intro-body .brand-heading .small {
     font-size: 40px;
@@ -221,13 +219,13 @@ background-image: url("https://www.transparenttextures.com/patterns/dark-matter.
   display: table;
   width: 100%;
   font-size: 18px;
-  text-align: left;
+  text-align: justify;
 }
 .content-section h1 {
   text-align: left;
 }
 .content-section h4 {
-  text-align: left;
+  text-align: center;
 }
 .content-section h2,
 .content-section h3 {
@@ -278,14 +276,14 @@ background-image: url("https://www.transparenttextures.com/patterns/dark-matter.
   background-color: #EEEEEE;
 }
 .green-section {
-  background-color: #003a63;
+  background-color: #5f6062;
   color: white;
 }
 .green-section h2 {
   color: white;
 }
 .green-section a {
-  color: e51937;
+  color: #e51937;
 }
 .green-section a:hover {
   color: rgba(255, 255, 255, 0.8);
@@ -298,7 +296,7 @@ background-image: url("https://www.transparenttextures.com/patterns/dark-matter.
   background-color: transparent;
 }
 #contact {
-  background-color: #003a63;
+  background-color: #5f6062;
   color: white;
 }
 #contact h2 {
@@ -307,14 +305,11 @@ background-image: url("https://www.transparenttextures.com/patterns/dark-matter.
 .orange-section {
   background-color: #e51937;
   color: white;
-  font-weight: 300;
-  font-size: 23px;
 }
-
 .orange-section .btn-default {
-  border: 1px solid #003a63;
+  border: 1px solid #5f6062;
   color: white;
-  background-color: #003a63;
+  background-color: #5f6062;
 }
 .orange-section .btn-default:hover,
 .orange-section .btn-default:focus {
@@ -324,7 +319,7 @@ background-image: url("https://www.transparenttextures.com/patterns/dark-matter.
   background-color: #303037;
 }
 .orange-section h2 {
-  color: #fff;
+  color: black;
 }
 .orange-section a {
   color: white;
@@ -350,7 +345,7 @@ background-image: url("https://www.transparenttextures.com/patterns/dark-matter.
   color: #3b5998;
 }
 .black-section a {
-  color: e51937;
+  color: #e51937;
 }
 .black-section a:hover {
   color: rgba(255, 255, 255, 0.8);
