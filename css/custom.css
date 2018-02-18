@@ -1,7 +1,8 @@
-/* h3{
-    font-weight: 300;
-    letter-spacing: 2px;
-} */
+body {
+  overflow-x: hidden;
+}
+
+
 
 .white h2{
     color: #fff !important;
@@ -377,6 +378,19 @@ a:hover:after {
 }
 
 /* BOOTCAMP */
+
+* {
+  /* border: 2px solid red; */
+  /* overflow-x: hidden; */
+}
+#bootcamp-cards img {
+  width: 100% !important;
+  /* overflow-y: hidden; */
+
+}
+#bp:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
 .card {
   position: relative;
   display: -webkit-box;
