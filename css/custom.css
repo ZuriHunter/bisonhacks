@@ -379,18 +379,15 @@ a:hover:after {
 
 /* BOOTCAMP */
 
-* {
-  /* border: 2px solid red; */
-  /* overflow-x: hidden; */
-}
-#bootcamp-cards img {
+#bootcamp-cards svg {
   width: 100% !important;
-  /* overflow-y: hidden; */
 
 }
-#bp:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+rect#Rectangle-7:hover {
+  box-shadow: 0 8px 16px 0 rgb(244,82,84) !important;
 }
+
 .card {
   position: relative;
   display: -webkit-box;
