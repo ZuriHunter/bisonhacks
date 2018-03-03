@@ -320,7 +320,7 @@ a:hover:after {
     text-align: center;
   }
 
-  .content-section h1 {
+  .content-section div div h1 {
     text-align: center;
   }
 
@@ -378,48 +378,25 @@ a:hover:after {
 }
 
 /* BOOTCAMP */
-
 #bootcamp-cards svg {
   width: 100% !important;
 
 }
+#bootcamp-cards svg:hover {
+  /* box-shadow: 0 8px 16px 0 rgb(244,82,84) !important; */
+}
+ /* rect#Rectangle:hover {
+   pointer-events: all !important;
+   box-shadow: 0 8px 16px 0 rgb(244,82,84) !important;
+ } */
 
-rect#Rectangle-7:hover {
-  box-shadow: 0 8px 16px 0 rgb(244,82,84) !important;
+.business-pitching g #Business-Pitching:hober{
+  fill: red !important;
 }
 
-.card {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  border: 1px solid rgba(0,0,0,.125);
-  /* border-radius: .25rem; */
-}
 
-.card-img-top {
-    width: 100%;
-    /* border-top-left-radius: calc(.25rem - 1px); */
-    /* border-top-right-radius: calc(.25rem - 1px); */
-}
-
-.card-body {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    padding: 1.25rem;
-}
-
-.card-title {
-    margin-bottom: .75rem;
+rect#Rectangle:hover {
+  fill:#F45254 !important;
 }
 /* BOOTCAMP */
 /* FAQ SECTION */
