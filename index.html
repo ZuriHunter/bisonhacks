@@ -18,11 +18,13 @@
   <link rel="shortcut icon" type="image/x-icon" href="img/bisonhacks-favi.ico" />
   <!-- <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
+  <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href="css/grayscale.css" rel="stylesheet">
   <link href="css/custom.css" rel="stylesheet">
+
+  <script src='https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
 
 
   <style>
@@ -219,10 +221,17 @@
       </div>
 
       <div id="remove-map" class="col-md-6 map-container" >
-        <div class="google-maps">
-          <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAAG1E3VHmTBt50mERccbZr9rkiIlF9KZ0
-                &q=740+15th+St+NW,+Washington,+DC+20005" allowfullscreen>
-            </iframe>
+        <div class="mapbox-maps">
+         <div id='map' style='width: 600; height: 850'></div>
+          <script>
+          mapboxgl.accessToken = 'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
+          var map = new mapboxgl.Map({
+          container: 'remove-map',
+          center: [-77.034275,38.898809],
+          zoom: 16.45,
+          style: 'mapbox://styles/langsmith/cjeda96iq37422smkd6dyqhmo'
+          });
+          </script>
         </div>
       </div>
 
@@ -1358,18 +1367,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAG1E3VHmTBt50mERccbZr9rkiIlF9KZ0&sensor=false"></script>
-  <script src="js/grayscale.min.js"></script>
-
-  <script>
-    var mymap = L.map('maps').setView([51.505, -0.09], 13);
-    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-      maxZoom: 18,
-      attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' + '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' + 'Imagery © <a href="http://mapbox.com">Mapbox</a>',
-      id: 'mapbox.streets'
-    }).addTo(mymap);
   </script>
-
+  <script src="js/grayscale.min.js"></script>
   <script>
     events = [
       ['Check-In and Lunch', 'Shalala Student Center (SC) Grand Ballroom', '11:00am - 12:00pm'],
