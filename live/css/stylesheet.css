@@ -1,0 +1,352 @@
+/* Import partials here. */
+/***** Variables *****/
+/***** Utility classes *****/
+@font-face {
+  font-family: 'Avenir';
+  src: url("../fonts/Avenir-Medium.eot");
+  src: url("../fonts/Avenir-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir-Medium.woff") format("woff"), url("../fonts/Avenir-Medium.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("../fonts/Avenir-Light.eot");
+  src: url("../fonts/Avenir-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir-Light.woff") format("woff"), url("../fonts/Avenir-Light.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("../fonts/Avenir-Black.eot");
+  src: url("../fonts/Avenir-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir-Black.woff") format("woff"), url("../fonts/Avenir-Black.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/***** Typography *****/
+html {
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+.header__underlineWrapper {
+  display: inline-block;
+}
+
+.header__underlineWrapper .header__underline {
+  float: left;
+  background: rgba(69, 90, 100, 0.25);
+  width: 105%;
+  height: 2rem;
+  border-radius: 2rem;
+  margin-top: -2.75rem;
+  margin-left: 1%;
+}
+
+@media (max-width: 767px) {
+  main h2 {
+    font-size: 5vh;
+  }
+  main h3 {
+    font-size: 4vh;
+  }
+  main p {
+    font-size: 3vh;
+  }
+  main button {
+    font-size: 2.5vh !important;
+    padding-left: 7.5vw !important;
+    padding-right: 7.5vw !important;
+  }
+}
+
+@media (min-width: 768px) {
+  main h2 {
+    font-size: 5vh;
+    font-weight: 700;
+  }
+  main h3 {
+    font-size: 4vh;
+    font-weight: 400;
+  }
+  main p {
+    font-size: 3vh;
+    font-weight: 100;
+    margin-bottom: 0.5vh;
+  }
+  main button {
+    font-size: 3vh !important;
+  }
+}
+
+main button {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  letter-spacing: 0.06em;
+}
+
+/* Sidebar Navigation */
+.active {
+  font-weight: 400 !important;
+}
+
+.nav__sidebar {
+  background: #465a64;
+  overflow-y: auto;
+  position: fixed;
+  height: 100vh;
+  z-index: 10;
+  padding-top: .8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .nav__sidebar {
+    height: auto;
+    position: fixed;
+    right: 0;
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .live__content {
+    padding-top: 2.5rem;
+  }
+}
+
+.nav-link {
+  color: white;
+  font-weight: 100;
+  font-size: .88em;
+}
+
+@media screen and (max-width: 992px) {
+  .nav-link {
+    font-size: .8em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-link {
+    font-size: .9em;
+  }
+}
+
+.nav-link:hover {
+  font-weight: 400;
+  color: white;
+}
+
+.navbar-toggler {
+  font-size: 1.5em;
+  padding: .5em;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/****** Navbar *****/
+.nav {
+  font-size: 0.875rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav p {
+  margin-left: 0;
+}
+
+.nav__header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav__timer {
+  font-size: .5em;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .nav__timer {
+    font-size: .4em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav__timer {
+    font-size: .6em;
+  }
+}
+
+.nav__section--1 {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.nav__image {
+  height: auto;
+  width: 4rem;
+  align-self: center;
+}
+
+@media (min-width: 768px) {
+  .nav__image {
+    height: auto;
+    width: 4rem;
+  }
+}
+
+.nav__live {
+  display: none;
+}
+
+.nav__bar {
+  color: white;
+  background-color: #455A64;
+  line-height: 5rem;
+}
+
+.nav__event {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: #7F8C92;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+  text-transform: uppercase;
+}
+
+.nav__event p {
+  margin-left: 0;
+  margin-bottom: 0;
+  padding: 1em 2.5em;
+  font-size: .6em;
+}
+
+.nav__event--upcoming {
+  background-color: #81B5E2;
+}
+
+.nav__soon,
+.nav__time,
+.nav__now--hide {
+  display: none;
+}
+
+.nav__soon--show,
+.nav__time--show {
+  display: initial;
+}
+
+.schedule {
+  max-width: 100%;
+}
+
+/* Section partials */
+.background-image {
+  width: 100vw;
+  top: 15vh;
+  background-image: url("../assets/backgroundImage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .5;
+  position: fixed;
+}
+
+@media (min-width: 768px) {
+  .background-image {
+    padding: 0;
+  }
+}
+
+main {
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+}
+
+main h2 {
+  position: relative;
+  left: 3vw;
+}
+
+main .map {
+  width: 100%;
+}
+
+main .schedules-container-desktop,
+main .schedule-desktop,
+main .schedules-container-mobile,
+main .schedule-mobile {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  main .map-main {
+    height: 91%;
+  }
+  main .schedules-container-desktop {
+    display: inherit;
+  }
+  main .schedules-container-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  main .map-lobby {
+    position: relative;
+    left: 6vw;
+    width: 80%;
+  }
+  main .schedules-container-desktop {
+    display: none;
+  }
+  main .schedules-container-mobile {
+    display: inherit;
+  }
+  main .schedule-sunday {
+    width: 50%;
+    top: 2vh;
+    left: 1vw;
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+
+main .row {
+  margin-bottom: 3vh;
+}
+
+.shirt-hacker, .shirt-mentor, .shirt-organizer {
+  text-align: center;
+  padding: 0 1vw;
+  color: #fff;
+}
+
+.shirt-hacker {
+  background-color: #808080;
+}
+
+.shirt-mentor {
+  background-color: #6B789E;
+}
+
+.shirt-organizer {
+  background-color: #000000;
+}

@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111271997-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-111271997-1');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Howard University Bison Hacks. March 30-31, 2018. 24 hours, 100 people, hosted at Mapbox.">
+    <meta name="keywords" content="hackathon, college, collegiate, bisonhacks, howard university, HU, howard, washington dc">
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@bisonhacks" />
+    <meta name="twitter:creator" content="@bisonhacks" />
+    <meta property="og:url" content="https://www.bisonhacks.com/" />
+    <meta property="og:title" content="Bison Hacks. 24 hours. 100 people." />
+    <meta property="og:description" content="Howard University Bison Hacks. March 30-31, 2018. 24 hours, 100 people, hosted at Mapbox." />
+    <!-- <meta property="og:image" content="https://www.slohacks.com/assets/ogimage.png" /> -->
+
+    <!-- Fonts and stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/stylesheet.css" />
+
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png?v=clout">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png?v=clout">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png?v=clout">
+    <link rel="mask-icon" href="assets/safari-pinned-tab.svg?v=clout" color="#5bbad5">
+    <link rel="shortcut icon" href="assets/favicon.ico?v=clout">
+    <meta name="theme-color" content="#455a64" />
+
+    <title>Bison Hacks Live</title>
+</head>
+<body data-spy="scroll" data-target="#navbar-data" data-offset="130">
+    <!-- Navbar -->
+    <header class="nav__header row no-gutters" id="app">
+        <h1 class="nav__live">
+            Bison Hacks Live Site
+        </h1>
+            <nav class="nav__bar col-md-3 col-12">
+                <div class="nav__section--1">
+                    <!-- <img src="../img/bisonhacks_logo.png" class="nav__image d-inline-block align-top" alt="Bison Hacks"> -->
+                    <!-- <p class="nav__timer">
+                        {{days}}:{{hours}}:{{minutes}}:{{seconds}} LEFT
+                    </p> -->
+                </div>
+            </nav>
+            <nav
+            v-bind:class="{'nav__event--upcoming' : upcoming}"
+            class="nav__event col-12 col-md-9"
+            >
+                <p>
+                    <span
+                        class="nav__soon"
+                        v-bind:class="{'nav__soon--show' : soon}"
+                    >
+                        Starting Soon
+                    </span>
+                    <span
+                        class="nav__time"
+                        v-bind:class="{'nav__time--show' : upcoming}"
+                    >
+                        {{ displayStartTime }}
+                    </span>
+                    <span
+                        v-bind:class="{'nav__now--hide' : nowToggle}"
+                    >
+                        Now
+                    </span>
+                    <strong>
+                        {{displayEvent.name}}
+                        <span
+                        v-bind:class="{'nav__now--hide' : nowToggle&&!upcoming}"
+                        >
+                            @
+                        </span>
+                        {{displayEvent.location}}
+                    </strong>
+                </p>
+            </nav>
+    </header>
+
+    <div class="row no-gutters">
+            <!-- Side nav -->
+            <div class="col-12 col-md-3 nav__sidebar">
+                <nav id="navbar-data" class="nav navbar-expand-md navbar-toggleable-sm">
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav flex-column">
+                            <li><a class="nav-link ml-2 py-0" href="#item-1">1. General Information</a></li>
+                                <li><a class="nav-link ml-4 py-0" href="#item-1-1">1.1 Network Name</a></li>
+                                <li><a class="nav-link ml-4 py-0" href="#item-1-2">1.2 Shirt Colors</a></li>
+                                <li><a class="nav-link ml-4 py-0" href="#item-1-3">1.3 Slack</a></li>
+                                <li><a class="nav-link ml-4 py-0" href="#item-1-4">1.4 Social Media</a></li>
+                                <li><a class="nav-link ml-4 py-0" href="#item-1-5">1.5 FAQ</a></li>
+                            <li><a class="nav-link ml-2 py-0" href="#item-2">2. Schedule</a></li>
+                            <li><a class="nav-link ml-2 py-0" href="#item-3">3. Map</a></li>
+                            <li><a class="nav-link ml-2 py-0" href="#item-4">4. Software & APIs</a></li>
+                                <li><a class="nav-link ml-4 py-0" href="#item-4-1">4.1 Compiled Sponsor Software/APIs</a></li>
+                            <li><a class="nav-link ml-2 py-0" href="#item-5">5. Hardware</a></li>
+                                <li><a class="nav-link ml-4 py-0" href="#item-5-1">5.1 Hardware List</a></li>
+                                <li><a class="nav-link ml-4 py-0" href="#item-5-2">5.2 Hardware Checkout</a></li>
+                            <li><a class="nav-link ml-2 py-0" href="#item-6">6. Mentors</a></li>
+                                <li><a class="nav-link ml-4 py-0" href="#item-6-1">6.1 Request a Mentor</a></li>
+                            <li><a class="nav-link ml-2 py-0" href="#item-7">7. Challenges</a></li>
+                                <li><a class="nav-link ml-4 py-0" href="#item-7-1">7.1 Slack/Social Media Challenges</a></li>
+                            <li><a class="nav-link ml-2 py-0" href="#item-8">8. Submissions and Judging</a></li>
+                                <li><a class="nav-link ml-4 py-0" href="#item-8-1">8.1 Devpost</a></li>
+                        </ul>
+                    </div>
+               </nav>
+            </div>
+
+    <!-- Content -->
+        <main class="col-12 col-md-9 offset-md-3 live__content">
+            <img class="background-image" src="assets/backgroundImage.png" />
+            <div class="container-fluid">
+                <section>
+                    <div class="row">
+                        <div class="col-11">
+                            <h2 id="item-1">1. General</h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-11 offset-1">
+                            <h3 id="item-1-1">1.1 Network Name</h3>
+                            <div class="col-11 offset-1">
+                                <p><span class="bold">SSID</span> SecureMustangWireless (Cal Poly students)</p>
+                                <p><span class="bold">SSID</span> CalPolyGuest or eduroam (non-Cal Poly students)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-11 offset-1">
+                            <h3 id="item-1-2">1.2 Shirt Colors</h3>
+                            <div class="col-11 offset-1 shirt-table">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-11">
+                                        <div class="shirt-hacker">HACKER</div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-11">
+                                        <div class="shirt-mentor">MENTOR</div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-11">
+                                        <div class="shirt-organizer">ORGANIZER</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-11 offset-1">
+                            <h3 id="item-1-3">1.3 Slack</h3>
+                            <div class="col-11 offset-1">
+                                <p>Watch for announcements, updates, and contests on Slack!</p>
+                                <a class="button-container" href="https://slohacks.slack.com/"><button class="btn btn-outline-primary">Take me to Slack</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-11 offset-1">
+                            <h3 id="item-1-4">1.4 Social Media</h3>
+                            <div class="col-11 offset-1">
+                                <p>Facebook: <a href="https://facebook.com/slohacks">SLO Hacks</a></p>
+                                <p>Twitter: <a href="https://twitter.com/slohacks">@slohacks</a></p>
+                                <p>Instagram: <a href="https://instagram.com/slo_hacks">@slo_hacks</a></p>
+                                <p>Snapchat: <a href="https://www.dropbox.com/s/jj4m2vz1ggrx1xp/snapcode-edited.png?dl=0">@slohacks</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-11 offset-1">
+                            <h3 id="item-1-5">1.5 FAQ</h3>
+                            <div class="col-11 offset-1">
+                                <p>Refer to our FAQ at <a href="slohacks.com">slohacks.com</a> or email <a href="/cdn-cgi/l/email-protection#e19584808ca1928d8e8980828a92cf828e8c"><span class="__cf_email__" data-cfemail="35415054587546595a5d54565e461b565a58">[email&#160;protected]</span></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="row">
+                        <div class="col-11">
+                            <h2 id="item-2">2. Schedule</h2>
+                        </div>
+                    </div>
+
+                    <div class="row schedules-container-desktop">
+                        <div class="col-11 offset-1">
+                            <img class="schedule-desktop" src="assets/schedule.png" />
+                        </div>
+                    </div>
+
+                    <div class="row schedules-container-mobile">
+                        <div class="col-sm-11 offset-1 schedule-saturday">
+                            <img class="schedule-mobile" src="assets/schedule-saturday.png" />
+                        </div>
+                        <div class="col-sm-11 offset-1 schedule-sunday">
+                            <img class="schedule-mobile" src="assets/schedule-sunday.png" />
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="row">
+                        <div class="col-11">
+                            <h2 id="item-3">3. Map</h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-5 col-sm-11 offset-1 map-container map-container-main">
+                            <img class="map map-main" src="assets/mac.png" />
+                        </div>
+                        <div class="col-md-5 col-sm-11 offset-md-0 offset-sm-1 map-container map-container-lobby">
+                            <img class="map map-lobby" src="assets/mac-lobby.png" />
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="row">
+                        <div class="col-11">
+                            <h2 id="item-4">4. Software and APIs</h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-11 offset-1">
+                            <h3 id="item-4-1">4.1 Sponsor Software/APIs</h3>
+                            <div class="col-11 offset-1">
+                                <p>Need an easy-to-read guide of sponsor APIs/software?</p>
+                                <a class="button-container" href="https://sponsorguide.slohacks.com"><button class="btn btn-outline-primary">Software/API Guide</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="row">
+                        <div class="col-11">
+                            <h2 id="item-5">5. Hardware</h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-11 offset-1">
+                            <h3 id="item-5-1">5.1 Hardware List</h3>
+                            <div class="col-11 offset-1">
+                                <p>Looking for a list of hardware we'll have?</p>
+                                <a class="button-container" href="https://docs.google.com/spreadsheets/d/1MAk1M9CftTe1OAsE7dcUFy5Vql4EL1HitLDB2JJ6Nbk/edit?usp=sharing">
+                                <button class="btn btn-outline-primary">Hardware List</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-11 offset-1">
+                            <h3 id="item-5-2">5.2 Hardware Checkout</h3>
+                            <div class="col-11 offset-1">
+                                <p>If you're looking to check out hardware or find live quantities
+                                of available hardware, please check MLH's hardware lab website.</p>
+                                <a class="button-container" href="https://hardware.mlh.io"><button class="btn btn-outline-primary">Hardware Checkout</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="row">
+                        <div class="col-11">
+                            <h2 id="item-6">6. Mentors</h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-11 offset-1">
+                            <h3 id="item-6-1">6.1 Request a Mentor</h3>
+                            <div class="col-11 offset-1">
+                                <p>You can request a mentor on Slack from the <a href="https://slohacks.slack.com/messages/C8S26GGCW/">#mentors</a> channel on Slack.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="row">
+                        <div class="col-11">
+                            <h2 id="item-7">7. Challenges</h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-11 offset-1">
+                            <h3 id="item-7-1">7.1 Slack/Social Media Challenges</h3>
+                            <div class="col-11 offset-1">
+                                <p>Watch for updates on Slack!</p>
+                                <a href="https://slohacks.slack.com/"><button class="btn btn-outline-primary">Take me to Slack</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="row">
+                        <div class="col-11">
+                            <h2 id="item-8">8. Submissions and Judging</h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-11 offset-1">
+                            <h3 id="item-8-1">8.1 Devpost</h3>
+                            <div class="col-11 offset-1">
+                                <p>Everyone will be submitting their work through Devpost. In addition, you will be able to find information about our judging criteria and our prizes.</p>
+                                <a class="button-container" href="https://slohacks.devpost.com"><button class="btn btn-outline-primary">Take me to Devpost</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/locale/af.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.14/moment-timezone-utils.js"></script>
+    <script type="text/javascript" src="./js/push.min.js"></script>
+    <script type="text/javascript" src="./js/popper.min.js"></script>
+    <script type="text/javascript" src="./js/smoothscroll.js"></script>
+    <script type="text/javascript" src="./js/navigation.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+
+</body>
+</html>
