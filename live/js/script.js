@@ -6,17 +6,17 @@ Number.prototype.zeroPad = function() {
 const SCHEDULE = [
   {
     id: 0,
-    name: "Check in",
-    location: "MAC Lobby",
-    startTime: "2018-02-03 10:00",
-    durationInMins: 60
+    name: "Registration Open",
+    location: "Mapbox 3rd Floor",
+    startTime: "2018-03-30 17:00",
+    durationInMins: 90
   },
   {
     id: 1,
     name: "Opening Ceremony",
-    location: "MAC",
-    startTime: "2018-02-03 11:00",
-    durationInMins: 45
+    location: "Theatre Room",
+    startTime: "2018-03-30 18:30",
+    durationInMins: 60
   },
   {
     id: 3,
