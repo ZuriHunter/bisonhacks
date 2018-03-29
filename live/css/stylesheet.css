@@ -98,7 +98,7 @@ main button {
 }
 
 .nav__sidebar {
-  background: #465a64;
+  background: #043763;
   overflow-y: auto;
   position: fixed;
   height: 100vh;
@@ -208,7 +208,7 @@ main button {
 
 .nav__bar {
   color: white;
-  background-color: #455A64;
+  background-color: #043763;
   line-height: 5rem;
 }
 
@@ -216,7 +216,7 @@ main button {
   display: flex;
   justify-content: center;
   color: white;
-  background-color: #7F8C92;
+  background-color: #F45254;
   flex-direction: column;
   text-align: center;
   align-content: center;
@@ -335,11 +335,11 @@ main .row {
 }
 
 .shirt-hacker {
-  background-color: #808080;
+  background-color: #043763;
 }
 
 .shirt-mentor {
-  background-color: #6B789E;
+  background-color: #F45254;
 }
 
 .shirt-organizer {
