@@ -20,157 +20,73 @@ const SCHEDULE = [
   },
   {
     id: 3,
-    name: "Team Mixer",
-    location: "MAC Stage",
-    startTime: "2018-02-03 11:45",
+    name: "Late Night Snack",
+    location: "Kitchen",
+    startTime: "2018-03-30 22:30",
     durationInMins: 15
   },
   {
     id: 4,
-    name: "Hacking Begins",
+    name: "Slideshow Karaoke",
     location: null,
-    startTime: "2018-02-03 12:00",
-    durationInMins: 0
+    startTime: "2018-03-30 22:45",
+    durationInMins: 60
   },
   {
     id: 5,
-    name: "Lunch",
-    location: "MAC Lobby",
-    startTime: "2018-02-03 12:00",
-    durationInMins: 60
+    name: "Breakfast Served (Panera Bread)",
+    location: "Kitchen",
+    startTime: "2018-03-31 08:00",
+    durationInMins: 30
   },
   {
     id: 6,
-    name: "Intro to Computational Linguistics",
-    location: "Baker 114",
-    startTime: "2018-02-03 13:00",
-    durationInMins: 60
+    name: "Lunch Served (Potbelly's)",
+    location: "Kitchen",
+    startTime: "2018-03-31 12:00",
+    durationInMins: 30
   },
   {
     id: 7,
-    name: "Getting Started with Google Cloud Platform",
-    location: "Baker 114",
-    startTime: "2018-02-03 14:00",
-    durationInMins: 60
+    name: "Project Due",
+    location: "Virtual",
+    startTime: "2018-03-31 14:00",
+    durationInMins: 30
   },
   {
     id: 8,
-    name: "Intro to Game Development",
-    location: "Baker 114",
-    startTime: "2018-02-03 15:00",
+    name: "Technical Check-Ins",
+    location: "Theatre Room",
+    startTime: "2018-03-31 14:15",
     durationInMins: 60
   },
   {
     id: 9,
-    name: "Networking with APIs in iOS",
-    location: "Baker 114",
-    startTime: "2018-02-03 16:00",
-    durationInMins: 60
+    name: "Project Presentations Start",
+    location: "Theatre Room",
+    startTime: "2018-03-31 14:45",
+    durationInMins: 120
   },
   {
     id: 10,
-    name: "Microcontroller Programming",
-    location: "Baker 114",
-    startTime: "2018-02-03 17:00",
+    name: "Judging Session",
+    location: "Theatre Room",
+    startTime: "2018-03-31 16:15",
     durationInMins: 60
   },
   {
     id: 11,
-    name: "Hacking Your Way to a Career",
-    location: "Baker 114",
-    startTime: "2018-02-03 18:00",
-    durationInMins: 60
-  },
-  {
-    id: 12,
-    name: "Dinner",
-    location: "MAC Lobby",
-    startTime: "2018-02-03 19:00",
-    durationInMins: 60
-  },
-  {
-    id: 13,
-    name: "Lean In Circle",
-    location: "Baker 114",
-    startTime: "2018-02-03 20:00",
-    durationInMins: 60
-  },
-  {
-    id: 14,
-    name: "Cup Stacking",
-    location: "MAC Lobby",
-    startTime: "2018-02-03 21:00",
-    durationInMins: 60
-  },
-  {
-    id: 15,
-    name: "Midnight Snack",
-    location: "MAC Lobby",
-    startTime: "2018-02-04 00:00",
-    durationInMins: 30
-  },
-  {
-    id: 16,
-    name: "Saurik Says Something Serious",
-    location: "MAC Lobby",
-    startTime: "2018-02-04 00:30",
-    durationInMins: 60
-  },
-  {
-    id: 17,
-    name: "Breakfast",
-    location: "MAC Lobby",
-    startTime: "2018-02-04 08:00",
-    durationInMins: 60
-  },
-  {
-    id: 18,
-    name: "Devpost Submissions",
-    location: "Devpost",
-    startTime: "2018-02-04 10:30",
-    durationInMins: 15
-  },
-  {
-    id: 19,
-    name: "Lunch",
-    location: "MAC Lobby",
-    startTime: "2018-02-04 11:30",
-    durationInMins: 30
-  },
-  {
-    id: 100,
-    name: "Hacking Ends",
-    location: null,
-    startTime: "2018-02-04 12:00",
-    durationInMins: 0
-  },
-  {
-    id: 21,
-    name: "Judges Orientation",
-    location: "MAC Lobby",
-    startTime: "2018-02-04 12:00",
-    durationInMins: 30
-  },
-  {
-    id: 22,
-    name: "Judging Expo",
-    location: "MAC",
-    startTime: "2018-02-04 12:30",
-    durationInMins: 90
-  },
-  {
-    id: 23,
-    name: "Closing Ceremony",
-    location: "Phillips Hall (6-124)",
-    startTime: "2018-02-04 14:00",
+    name: "Award Ceremony",
+    location: "Theatre Room",
+    startTime: "2018-03-31 17:00",
     durationInMins: 60
   }
 ];
 
 var EFFECTIVE_SCHEDULE = SCHEDULE.map(function(event) {
-  startTime = moment.tz(event.startTime, "America/Los_Angeles");
+  startTime = moment.tz(event.startTime, "America/New_York");
   event.durationInMins = event.durationInMins>5 ? event.durationInMins-5 : event.durationInMins
-  endTime = moment.tz(event.startTime, "America/Los_Angeles").add(event.durationInMins, 'm');
+  endTime = moment.tz(event.startTime, "America/New_York").add(event.durationInMins, 'm');
   event.startTime = startTime;
   event.endTime = endTime;
   return event;
@@ -235,12 +151,12 @@ var app = new Vue({
   mounted: function() {
     this.targetTime = EFFECTIVE_SCHEDULE.find(o => o.id === ID_HACKING_END).startTime;
     window.setInterval(() => {
-        this.currentTime = moment.tz("America/Los_Angeles");
+        this.currentTime = moment.tz("America/New_York");
         var vu = this;
         var flag = false;
         EFFECTIVE_SCHEDULE.forEach(function(scheduleItem) {
-          var eventStarted = scheduleItem.startTime.isBefore(moment.tz("America/Los_Angeles"));
-          var eventHasntEnded = scheduleItem.endTime.isAfter(moment.tz("America/Los_Angeles"));
+          var eventStarted = scheduleItem.startTime.isBefore(moment.tz("America/New_York"));
+          var eventHasntEnded = scheduleItem.endTime.isAfter(moment.tz("America/New_York"));
           if (eventStarted && eventHasntEnded && scheduleItem.name != vu.displayEvent.name) {
             Push.create(scheduleItem.name, {
               body: scheduleItem.location,
@@ -259,7 +175,7 @@ var app = new Vue({
         if (!flag) {
           var oldName = vu.displayEvent.name;
           EFFECTIVE_SCHEDULE.forEach(function(scheduleItem) {
-            var eventHasntStarted = scheduleItem.startTime.isAfter(moment.tz("America/Los_Angeles"));
+            var eventHasntStarted = scheduleItem.startTime.isAfter(moment.tz("America/New_York"));
             var diff = vu.displayEvent.startTime === null ? -1 : scheduleItem.startTime.diff(vu.displayEvent.startTime);
             diff = scheduleItem.durationInMins == 0 ? 1 : diff;
             if (eventHasntStarted && diff < 0) {
