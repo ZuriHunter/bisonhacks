@@ -1,0 +1,76 @@
+h1, h2 {
+    font-family: 'Amatic SC', cursive !important;
+    font-weight: bolder !important;
+    line-height: 46px;
+    margin: 0 0 23px 0;
+    color: #337ab7 !important;
+}
+
+h1 {
+  font-size: 95px !important;
+  }
+
+h2 {
+  font-size: 46px !important;
+}
+
+h3 {
+    font-family: 'Josefin Sans', sans-serif !important;
+    font-size: 16px;
+    color: #444242 !important;
+  }
+
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    overflow: auto;
+    padding-top: 80px;
+}
+
+nav {
+  background-color: #ffffff;
+}
+
+p {
+  font-family: 'Josefin Sans', sans-serif !important;
+  color: #444242 !important;
+}
+
+.navbar-nav>li>a {
+  font-family: 'Amatic SC', sans-serif;
+  font-size: 40px;
+  /* color: #163962; */
+}
+
+nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: underline !important;
+    background-color: transparent !important;
+}
+
+.information {
+  padding-top: 200px;
+}
+
+.fs {
+  font-size: 16px;
+}
+
+.fm {
+  font-size: 32px;
+}
+
+.fl {
+  font-size: 64px;
+}
+
+.sign-up-btn {
+  font-family: 'Josefin Sans', sans-serif !important;
+  font-weight: bold;
+  background-color: #F45254 !important;
+  color: #ffffff !important;
+  border-style: none !important;
+}
