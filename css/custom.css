@@ -126,3 +126,8 @@ label {
 footer {
   padding-top: 300px;
 }
+
+.img-thumbnail {
+  max-width: 50% !important;
+  border: none !important;
+}
