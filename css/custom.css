@@ -140,3 +140,27 @@ section#sponsors {
   padding-top: 150px;
   padding-bottom: 60px;
 }
+
+#info h3 {
+  font-family: 'Amatic SC', cursive !important;
+  color: #337ab7 !important;
+  font-weight: bolder;
+}
+
+.fa-5x {
+  color: #F45254 !important;
+}
+
+#themes p{
+  font-size: 16px;
+}
+
+section#info {
+  padding-top: 300px;
+  padding-bottom: 100px;
+}
+
+section#faq {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
