@@ -124,10 +124,19 @@ label {
 }
 
 footer {
-  padding-top: 300px;
+  padding-top: 200px;
 }
 
-.img-thumbnail {
-  max-width: 50% !important;
-  border: none !important;
+#sponsors img {
+  padding-bottom: 100px;
+  max-width: 85% !important;
+}
+
+#sponsors h1 {
+  padding-bottom: 60px;
+}
+
+section#sponsors {
+  padding-top: 150px;
+  padding-bottom: 60px;
 }
