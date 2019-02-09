@@ -147,9 +147,7 @@ section#sponsors {
   font-weight: bolder;
 }
 
-.fa-5x {
-  color: #F45254 !important;
-}
+svg {color: #F45254 !important;}
 
 #themes p{
   font-size: 16px;
