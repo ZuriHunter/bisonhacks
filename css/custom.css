@@ -181,3 +181,30 @@ section#faq {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+
+#map {
+  width: 100%;
+  height: 555px;
+}
+
+#map-section h3 {
+  font-family: 'Amatic SC', cursive !important;
+  color: #337ab7 !important;
+  font-size: 35px;
+
+}
+
+#map-section h4 {
+  color: #444242 !important;
+}
+
+#map-section label {
+  font-family: 'Amatic SC', cursive !important;
+  font-weight: bolder;
+  font-size: 35px;
+  color: #F45254 !important;
+}
+
+#map-section p {
+  font-size: 16px;
+}

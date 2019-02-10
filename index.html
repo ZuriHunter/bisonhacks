@@ -37,12 +37,10 @@
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
-  <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
-  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic" rel="stylesheet" type="text/css"> -->
-  <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">  <link href="css/grayscale.css" rel="stylesheet"> -->
+  <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
   <link href="http://fonts.googleapis.com/css?family=Josefin+Sans:600,700,800|Amatic+SC:600,700,800" rel="stylesheet" type="text/css">
 
-  <script src='https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
   <script type="application/ld+json">
@@ -164,7 +162,37 @@
        </div>
    </section>
 
-   <section id="info">
+   <section id="map-section">
+     <div class="container">
+       <div class="row">
+         <div class="col-lg-6">
+           <div class="row">
+             <div class="col-lg-12 text-center">
+               <h3>Howard University Official Annual Hackathon</h3>
+               <h4> BISON HACKS </h4>
+             </div>
+             <label>WHERE</label>
+             <p>Inclusive Innovation Incubator Center <br/> 2301 Georgia Avene NW Washington, DC 20001</p>
+
+             <label>START</label>
+             <p>March 29, 2019 5:00PM </p>
+
+             <label>END</label>
+             <p>March 30, 2019 6:30PM </p>
+
+             <label>WHO</label>
+             <p>For students in the DMV area and Howard University students</p>
+             <br/>
+           </div>
+         </div>
+         <div class="col-lg-6">
+           <div id="map"></div>
+         </div>
+       </div>
+     </div>
+   </section>
+
+   <section id="info" style="padding-top: 30px;" >
      <div id="themes" class="container">
        <div class="row">
          <div class="col-lg-12">
@@ -589,6 +617,89 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+  <script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
+  var map = new mapboxgl.Map({
+      style: 'mapbox://styles/mapbox/light-v9',
+      center: [-77.021680,38.920810],
+      zoom: 16.5,
+      pitch: 45,
+      bearing: -17.6,
+      container: 'map'
+  });
+
+  map.addControl(new mapboxgl.NavigationControl());
+
+  map.on('load', function() {
+    map.loadImage('img/BisonHead.png', function(error, image) {
+    if (error) throw error;
+    map.addImage('BisonHead', image);
+    map.addLayer({
+        "id": "points",
+        "type": "symbol",
+        "source": {
+          "type": "geojson",
+          "data": {
+            "type": "FeatureCollection",
+            "features": [{
+              "type": "Feature",
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-77.021680,38.920810]
+              }
+            }]
+          }
+        },
+    "layout": {
+      "icon-image": "BisonHead",
+      "icon-size": 0.25
+          }
+      });
+    });
+
+
+    // Insert the layer beneath any symbol layer.
+    var layers = map.getStyle().layers;
+
+    var labelLayerId;
+    for (var i = 0; i < layers.length; i++) {
+    if (layers[i].type === 'symbol' && layers[i].layout['text-field']) {
+    labelLayerId = layers[i].id;
+    break;
+    }
+    }
+
+    map.addLayer({
+      'id': '3d-buildings',
+      'source': 'composite',
+      'source-layer': 'building',
+      'filter': ['==', 'extrude', 'true'],
+      'type': 'fill-extrusion',
+      'minzoom': 15,
+      'paint': {
+        'fill-extrusion-color': '#F45254',
+
+        // use an 'interpolate' expression to add a smooth transition effect to the
+        // buildings as the user zooms in
+        'fill-extrusion-height': [
+          "interpolate", ["linear"], ["zoom"],
+          15, 0,
+          15.05, ["get", "height"]
+        ],
+        'fill-extrusion-base': [
+          "interpolate", ["linear"], ["zoom"],
+          15, 0,
+          15.05, ["get", "min_height"]
+        ],
+        'fill-extrusion-opacity': .6
+      }
+    }, labelLayerId);
+
+
+  });
+
+  </script>
 </body>
 
 </html>
