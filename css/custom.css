@@ -149,6 +149,25 @@ section#sponsors {
 
 svg {color: #F45254 !important;}
 
+#firstplace .fa-5x {
+  font-size: 10em !important;
+  color: #D4AF37 !important;
+}
+
+#secondplace .fa-5x {
+  font-size: 10em !important;
+  color: #C0C0C0 !important;
+}
+
+#thirdplace .fa-5x {
+  font-size: 10em !important;
+  color: #cd7f32 !important;
+}
+
+#innovation .fa-5x {
+  font-size: 10em !important;
+}
+
 #themes p{
   font-size: 16px;
 }
