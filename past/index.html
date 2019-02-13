@@ -99,9 +99,6 @@
        <li>
          <a href="#data">Data</a>
        </li>
-       <li>
-         <a href="#gallery">Gallery</a>
-       </li>
        <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Years
@@ -120,13 +117,71 @@
     <body>
       <section>
         <div class="container">
-          <p> Formally known as "HU Hacks", Bison Hacks is Howard University School of Business hackathon.</p>
+          <div class="row">
+            <div class="col-md-8">
+              <h2>Bison Hacks</h2>
+              <p> Formally known as "HU Hacks", Bison Hacks is Howard University School of Business hackathon.</p>
+            </div>
+            <div class="col-md-4">
+              <img src="./img/sob.jpg" style="max-width: 115%;"/>
+            </div>
+          </div>
         </div>
       </section>
       <section id="data">
-        
-      </section>
-      <section id="gallery">
+        <div class="container">
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">2018</a>
+            </li>
+          </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+            <!-- 2018 Location and Sponsors -->
+            <div class="row">
+              <div class="col-lg-5">
+                <div id="map"></div>
+              </div>
+              <div class="col-lg-7">
+                For 2018, it was our first year having Bison Hacks off campus and hosted
+                <img src="./2018/img/mapbox-logo-color.png"/>
+
+              </div>
+              <div class="col-lg-12">
+              </div>
+            </div>
+
+            <!-- 2018 Student Information-->
+            <div class="row">
+              <div class="col-lg-4">
+                # of students attended
+              </div>
+              <div class="col-lg-8">
+                Gender ratio of students
+              </div>
+              <div class="col-lg-8">
+                Which unviersities were there
+              </div>
+              <div class="col-lg-4">
+                Student race breakdown
+              </div>
+            </div>
+
+            <!-- Winners and End Result -->
+            <div class="row">
+              <div class="col-lg-6">
+                list of winners projects and code base
+              </div>
+              <div class="col-lg-6">
+                Total number of tools and languages the students use
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+
       </section>
 
 
@@ -143,6 +198,88 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+        <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
+        var map = new mapboxgl.Map({
+            style: 'mapbox://styles/mapbox/light-v9',
+            center: [-77.03371,38.89937],
+            zoom: 16.5,
+            pitch: 45,
+            bearing: -17.6,
+            container: 'map'
+        });
+
+        map.addControl(new mapboxgl.NavigationControl());
+
+        map.on('load', function() {
+          map.loadImage('../img/BisonHead.png', function(error, image) {
+          if (error) throw error;
+          map.addImage('BisonHead', image);
+          map.addLayer({
+              "id": "points",
+              "type": "symbol",
+              "source": {
+                "type": "geojson",
+                "data": {
+                  "type": "FeatureCollection",
+                  "features": [{
+                    "type": "Feature",
+                    "geometry": {
+                      "type": "Point",
+                      "coordinates": [-77.03371,38.89937]
+                    }
+                  }]
+                }
+              },
+          "layout": {
+            "icon-image": "BisonHead",
+            "icon-size": 0.25
+                }
+            });
+          });
+
+
+          // Insert the layer beneath any symbol layer.
+          var layers = map.getStyle().layers;
+
+          var labelLayerId;
+          for (var i = 0; i < layers.length; i++) {
+          if (layers[i].type === 'symbol' && layers[i].layout['text-field']) {
+          labelLayerId = layers[i].id;
+          break;
+          }
+          }
+
+          map.addLayer({
+            'id': '3d-buildings',
+            'source': 'composite',
+            'source-layer': 'building',
+            'filter': ['==', 'extrude', 'true'],
+            'type': 'fill-extrusion',
+            'minzoom': 15,
+            'paint': {
+              'fill-extrusion-color': '#F45254',
+
+              // use an 'interpolate' expression to add a smooth transition effect to the
+              // buildings as the user zooms in
+              'fill-extrusion-height': [
+                "interpolate", ["linear"], ["zoom"],
+                15, 0,
+                15.05, ["get", "height"]
+              ],
+              'fill-extrusion-base': [
+                "interpolate", ["linear"], ["zoom"],
+                15, 0,
+                15.05, ["get", "min_height"]
+              ],
+              'fill-extrusion-opacity': .6
+            }
+          }, labelLayerId);
+
+
+        });
+
+        </script>
 
     </body>
 </html>
