@@ -208,3 +208,21 @@ section#faq {
 #map-section p {
   font-size: 16px;
 }
+
+td {
+  padding:  10px 0px 15px 15px !important;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  color: #444242;
+}
+
+td span {
+  font-weight: bolder;
+}
+
+th {
+  font-size: 35px;
+  font-family: 'Amatic SC', cursive;
+  color: #F45254;
+  font-weight: bold;
+}
