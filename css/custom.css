@@ -226,3 +226,13 @@ th {
   color: #F45254;
   font-weight: bold;
 }
+
+#team h3 {
+  font-family: 'Amatic SC', cursive;
+  color: #337ab7 !important;
+
+}
+
+.img-thumbnail {
+  border: none !important;
+}
