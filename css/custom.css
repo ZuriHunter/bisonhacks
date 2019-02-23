@@ -236,3 +236,7 @@ th {
 .img-thumbnail {
   border: none !important;
 }
+
+#judges h3 {
+  color: #337ab7 !important;
+}
