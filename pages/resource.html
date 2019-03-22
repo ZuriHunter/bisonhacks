@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Howard University Bison Hacks. March 20-30, 2019. 24 hours, 150 people, hosted at Inclusive Innovation Incubator">
+    <meta name="keywords" content="hackathon, college, collegiate, bisonhacks, howard university, HU, howard, washington dc">
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@bisonhacks" />
+    <meta name="twitter:creator" content="@bisonhacks" />
+    <meta property="og:url" content="https://www.bisonhacks.com/" />
+    <meta property="og:title" content="Bison Hacks. 24 hours. 100 people." />
+    <meta property="og:description" content="Howard University Bison Hacks. March 20-30, 2019. 24 hours, 150 people, hosted at Inclusive Innovation Incubator." />
+    <!-- <meta property="og:image" content="https://www.bisonhacks.com/img/ogimage.png" /> -->
+
+    <!-- Fonts and stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/stylesheet.css" />
+
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png?v=clout">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png?v=clout">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png?v=clout">
+    <link rel="mask-icon" href="assets/safari-pinned-tab.svg?v=clout" color="#5bbad5">
+    <link rel="shortcut icon" href="assets/favicon.ico?v=clout">
+    <meta name="theme-color" content="#455a64" />
+
+    <title>Bison Hacks Resources</title>
+</head>
+<body data-spy="scroll" data-target="#navbar-data" data-offset="130">
+    <!-- Navbar -->
+    <header class="nav__header row no-gutters" id="app">
+        <h1 class="nav__live">
+            Bison Hacks Resources
+        </h1>
+            <nav class="nav__bar col-md-3 col-12">
+                <div class="nav__section--1">
+                    <img src="../img/BisonHead.png" style="width: 30% !important;" class="nav__image d-inline-block align-top" alt="Bison Hacks">
+                </div>
+            </nav>
+            <nav
+            v-bind:class="{'nav__event--upcoming' : upcoming}"
+            class="nav__event col-12 col-md-9"
+            > Resources Page
+            </nav>
+    </header>
+
+    <div class="row no-gutters">
+            <!-- Side nav -->
+            <div class="col-12 col-md-3 nav__sidebar">
+                <nav id="navbar-data" class="nav navbar-expand-md navbar-toggleable-sm">
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav flex-column">
+                            <li><a class="nav-link ml-2 py-0" href="#item-1">1. General Information</a></li>
+                                <li><a class="nav-link ml-4 py-0" href="#item-1-1">1.1 Network Name</a></li>
+                                <li><a class="nav-link ml-4 py-0" href="#item-1-2">1.2 Shirt Colors</a></li>
+                                <li><a class="nav-link ml-4 py-0" href="#item-1-3">1.3 Slack</a></li>
+                                <li><a class="nav-link ml-4 py-0" href="#item-1-4">1.4 Social Media</a></li>
+                                <li><a class="nav-link ml-4 py-0" href="#item-1-5">1.5 FAQ</a></li>
+                            <li><a class="nav-link ml-2 py-0" href="#item-2">2. Schedule</a></li>
+                            <li><a class="nav-link ml-2 py-0" href="#item-3">3. Map</a></li>
+                            <li><a class="nav-link ml-2 py-0" href="#item-4">4. Software & APIs</a></li>
+                                <li><a class="nav-link ml-4 py-0" href="#item-4-1">4.1 Using Mapbox Maps Andorid SDK</a></li>
+                            <li><a class="nav-link ml-2 py-0" href="#item-6">6. Mentors</a></li>
+                                <li><a class="nav-link ml-4 py-0" href="#item-6-1">6.1 Request a Mentor</a></li>
+                            <li><a class="nav-link ml-2 py-0" href="#item-7">7. Tutorials</a></li>
+                                <li><a class="nav-link ml-4 py-0" href="#item-7-1">7.1 Using Github</a></li>
+                                <li><a class="nav-link ml-4 py-0" href="#item-7-2">7.2 Submitting to DevPost</a></li>
+                                <li><a class="nav-link ml-4 py-0" href="#item-7-3">7.3 Using Github Pages</a></li>
+                            <li><a class="nav-link ml-2 py-0" href="#item-8">8. Submissions and Judging</a></li>
+                                <li><a class="nav-link ml-4 py-0" href="#item-8-1">8.1 Devpost</a></li>
+                                <li><a class="nav-link ml-4 py-0" href="#item-8-2">8.2 Judging Criteria</a></li>
+                        </ul>
+                    </div>
+               </nav>
+            </div>
+
+    <!-- Content -->
+        <main class="col-12 col-md-9 offset-md-3 live__content"  style="text-align: center; list-style-type: none; ">
+            <div class="container-fluid">
+                <section>
+                    <div class="row">
+                        <div class="col-11">
+                            <h2 id="item-1">1. General</h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-11 offset-1">
+                            <h3 id="item-1-1">1.1 Network Name</h3>
+                            <div class="col-11 offset-1">
+                                <p><span class="bold">SSID Name</span> Community</p>
+                                <p><span class="bold">SSID Password</span> 7400OfficeSpace</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-11 offset-1">
+                            <h3 id="item-1-2">1.2 Shirt Colors</h3>
+                            <div class="col-11 offset-1 shirt-table">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-11">
+                                        <div class="shirt-hacker">STUDENT</div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-11">
+                                        <div class="shirt-mentor">MENTOR</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-11 offset-1">
+                            <h3 id="item-1-3">1.3 Slack</h3>
+                            <div class="col-11 offset-1">
+                                <p>Please sign up to slack for announcements, updates, and mentor requests on Slack!</p>
+                                <a class="button-container" href="https://zurihunter92.typeform.com/to/Q3nwhA"><button class="btn btn-outline-primary">Sign Up For Slack</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-11 offset-1">
+                            <h3 id="item-1-4">1.4 Social Media</h3>
+                            <div class="col-11 offset-1">
+                                <p>Facebook: <a href="https://facebook.com/bisonhacks">BisonHacks</a></p>
+                                <p>Twitter: <a href="https://twitter.com/bisonhacks">@BisonHacks</a></p>
+                                <p>Instagram: <a href="https://instagram.com/bisonhacks">@BisonHacks</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-11 offset-1">
+                            <h3 id="item-1-5">1.5 FAQ</h3>
+                            <div class="col-11 offset-1">
+                                <p>Refer to our FAQ at <a href="www.bisonhacks.com">bisonhacks.com</a> or email <a ><span class="__cf_email__">bisonhacks@gmail.com</span></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="row">
+                        <div class="col-11">
+                            <h2 id="item-2">2. Schedule</h2>
+                        </div>
+                    </div>
+                    <div class="row schedules-container-desktop">
+                        <div class="col-11 offset-1">
+                            <img class="schedule-desktop" src="../img/fullschedule.png" />
+                        </div>
+                    </div>
+                    <div class="row schedules-container-mobile">
+                        <div class="col-sm-11 offset-1 schedule-saturday">
+                            <img class="schedule-mobile" src="../img/scheduleone.png" />
+                        </div>
+                        <div class="col-sm-11 offset-1 schedule-sunday">
+                            <img class="schedule-mobile" src="../img/scheduletwo.png" />
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="row">
+                        <div class="col-11">
+                            <h2 id="item-3">3. Map</h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-5 col-sm-11 offset-md-0 offset-sm-1 map-container map-container-lobby">
+                          <img class="map map-lobby" src="assets/mac-lobby.png" />
+                      </div>
+                        <!-- <div class="col-md-5 col-sm-11 offset-1 map-container map-container-main">
+                            <img class="map map-main" src="../img/map.png" />
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="row">
+                        <div class="col-11">
+                            <h2 id="item-4">4. Software and APIs</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-11 offset-1">
+                            <h3 id="item-4-1">4.1 Using Mapbox Maps Andorid SDK</h3>
+                            <div class="col-11 offset-1">
+                              <p>First Steps with the Mapbox Maps SDK for Android</p> <a href="https://www.mapbox.com/help/first-steps-android-sdk/">Click Here</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="row">
+                        <div class="col-11">
+                            <h2 id="item-6">6. Mentors</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-11 offset-1">
+                            <h3 id="item-6-1">6.1 Request a Mentor</h3>
+                            <div class="col-11 offset-1">
+                                <p>You can request a mentor on Slack from the <a href="https://bisonhacks2018.slack.com">#mentors</a> channel on Slack.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="row">
+                        <div class="col-11">
+                            <h2 id="item-7">7. Tutorials</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-11 offset-1">
+                            <h3 id="item-7-1">7.1 Using Github</h3>
+                            <div class="col-11 offset-1">
+                                <p>Follow these <a href="https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/">instructions</a>.</p>
+                            </div>
+                        </div>
+                        <div class="col-11 offset-1">
+                            <h3 id="item-7-2">7.2 Submitting to DevPost</h3>
+                            <div class="col-11 offset-1">
+                                <p>Follow this <a href="https://help.devpost.com/customer/en/portal/articles/1389689-enter-a-submission">tutorial</a>.
+                            </div>
+                        </div>
+                        <div class="col-11 offset-1">
+                            <h3 id="item-7-3">7.3 Using Github Pages</h3>
+                            <div class="col-11 offset-1">
+                                <p>Follow this <a href="https://pages.github.com/">tutorial</a>.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="row">
+                        <div class="col-11">
+                            <h2 id="item-8">8. Submissions and Judging</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-11 offset-1">
+                            <h3 id="item-8-1">8.1 Devpost</h3>
+                            <div class="col-11 offset-1">
+                                <p>Everyone will be submitting their work through Devpost. In addition, you will be able to find information about our judging criteria and our prizes.</p>
+                                <a class="button-container" href="https://bisonhacks2018.devpost.com"><button class="btn btn-outline-primary">Take me to Devpost</button></a>
+                            </div>
+                        </div>
+                        <div class="col-11 offset-1">
+                            <h3 id="item-8-2">8.2 Judging Criteria</h3>
+                            <div class="col-11 offset-1">
+                              <p>
+                                <b>Business Model.</b> Outside of technical impressiveness in the project, during this hackathon judges will be looking for how teams communicate customer validation (Who are your users?) and acquisition strategy (How will you attract your users?). Those two pillars will help validate the idea.
+                              </p><br/>
+                              <p>
+                                <b>Impact.</b> Our theme this year is to create a solution that will help improve the betterment of the DMV community. In this category we are looking for key factors that shows how the team's idea is scalable and give a clear measure as to how thier solution makes an impact on the user's life.
+                              </p><br/>
+                              <p>
+                                <b>Technical.</b> In the midst of the given 24 hours the judges will be looking for an established minimum viable product and a working prototype . This can range from a web application, mobile application or an IoT.
+                              </p><br/>
+                              <p>
+                                <b>Design and User Experience.</b> The teams final minimum viable product and prototype should achieve an engaging and memorable user experience. This means having a clear interface that is intuitive for users that come from different backgrounds.
+                              </p><br/>
+                              <p>
+                                <b>Presentation.</b> Teams will be rated base off presentation layout and articulation of their solution. This means how well was the team able to communicate their target audience, problems they are solving and how their product is the solution to that problem.
+                              </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/locale/af.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.14/moment-timezone-with-data-2012-2022.js"></script>
+    <script type="text/text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.14/moment-timezone.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.14/moment-timezone-utils.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="./js/push.min.js"></script>
+    <script type="text/javascript" src="./js/popper.min.js"></script>
+    <script type="text/javascript" src="./js/smoothscroll.js"></script>
+    <script type="text/javascript" src="./js/navigation.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+
+</body>
+</html>
