@@ -98,12 +98,14 @@ main button {
 }
 
 .nav__sidebar {
-  background: #043763;
+  background: #337ab7;
   overflow-y: auto;
+  /* color: #337ab7; */
   position: fixed;
   height: 100vh;
   z-index: 10;
   padding-top: .8rem;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 @media screen and (max-width: 768px) {
@@ -207,20 +209,21 @@ main button {
 }
 
 .nav__bar {
-  color: white;
-  background-color: #043763;
+  background-color: #337ab7;
   line-height: 5rem;
 }
 
 .nav__event {
   display: flex;
   justify-content: center;
-  color: white;
-  background-color: #F45254;
+  color: #337ab7;
+  background-color: #FFFFFF;
   flex-direction: column;
   text-align: center;
   align-content: center;
+  font-family: 'Amatic SC', cursive;
   text-transform: uppercase;
+  font-size: 65px;
 }
 
 .nav__event p {
@@ -331,17 +334,43 @@ main .row {
 .shirt-hacker, .shirt-mentor, .shirt-organizer {
   text-align: center;
   padding: 0 1vw;
-  color: #fff;
+  color: #444242;
+  border-color: #444242;
 }
 
 .shirt-hacker {
-  background-color: #043763;
+  background-color: #337ab7;
+  color: #ffffff !important;
 }
 
 .shirt-mentor {
-  background-color: #F45254;
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-color: #444242;
 }
 
 .shirt-organizer {
   background-color: #000000;
+}
+
+td {
+  padding:  10px 0px 15px 15px !important;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  color: #444242;
+}
+
+td span {
+  font-weight: bolder;
+}
+
+th {
+  font-size: 35px;
+  font-family: 'Amatic SC', cursive;
+  color: #F45254;
+  font-weight: bold;
+}
+
+section {
+font-family: 'Josefin Sans' !important;
 }
