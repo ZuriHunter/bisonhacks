@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Howard University Bison Hacks. March 20-30, 2019. 24 hours, 150 people, hosted at Inclusive Innovation Incubator">
+    <meta name="keywords" content="hackathon, college, collegiate, bisonhacks, howard university, HU, howard, washington dc">
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@bisonhacks" />
+    <meta name="twitter:creator" content="@bisonhacks" />
+    <meta property="og:url" content="https://www.bisonhacks.com/" />
+    <meta property="og:title" content="Bison Hacks. 24 hours. 100 people." />
+    <meta property="og:description" content="Howard University Bison Hacks. March 20-30, 2019. 24 hours, 150 people, hosted at Inclusive Innovation Incubator." />
+    <!-- <meta property="og:image" content="https://www.bisonhacks.com/img/ogimage.png" /> -->
+
+    <!-- Fonts and stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Sans:600,700,800|Amatic+SC:600,700,800" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/stylesheet.css" />
+
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png?v=clout">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png?v=clout">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png?v=clout">
+    <link rel="mask-icon" href="assets/safari-pinned-tab.svg?v=clout" color="#5bbad5">
+    <link rel="shortcut icon" href="assets/favicon.ico?v=clout">
+    <meta name="theme-color" content="#455a64" />
+
+    <title>Bison Hacks Resources</title>
+</head>
+<body data-spy="scroll" data-target="#navbar-data" data-offset="130">
+    <!-- Navbar -->
+    <header class="nav__header row no-gutters" id="app">
+        <h1 class="nav__live">
+            Bison Hacks Resources
+        </h1>
+            <nav class="nav__bar col-md-3 col-12">
+                  <a href="../index.html">
+                <div class="nav__section--1">
+
+                    <img src="../img/BisonHead.png" style=" z-index: 9999; width: 30% !important;" class="nav__image d-inline-block align-top" alt="Bison Hacks">
+                </div>
+                </a>
+            </nav>
+            <nav
+            v-bind:class="{'nav__event--upcoming' : upcoming}"
+            class="nav__event col-12 col-md-9"
+            > Presentations
+            </nav>
+    </header>
+
+    <div class="row no-gutters">
+            <!-- Side nav -->
+            <div class="col-12 col-md-3 nav__sidebar">
+                <nav id="navbar-data" class="nav navbar-expand-md navbar-toggleable-sm">
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <!-- <ul class="nav navbar-nav flex-column">
+                            <li><a class="nav-link ml-2 py-0" href="#item-1">1. General Information</a></li>
+                                <li><a class="nav-link ml-4 py-0" href="#item-1-1">1.1 Network Name</a></li>
+                                <li><a class="nav-link ml-4 py-0" href="#item-1-2">1.2 Shirt Colors</a></li>
+                                <li><a class="nav-link ml-4 py-0" href="#item-1-3">1.3 Slack</a></li>
+                                <li><a class="nav-link ml-4 py-0" href="#item-1-4">1.4 Social Media</a></li>
+                                <li><a class="nav-link ml-4 py-0" href="#item-1-5">1.5 FAQ</a></li>
+                            <li><a class="nav-link ml-2 py-0" href="#item-2">2. Schedule</a></li>
+                            <li><a class="nav-link ml-2 py-0" href="#item-3">3. Map</a></li>
+                            <li><a class="nav-link ml-2 py-0" href="#item-4">4. Software, APIs & Data Sets</a></li>
+                                <li><a class="nav-link ml-4 py-0" href="#item-4-1">4.1 Wayfair AR/VR API</a></li>
+                                <li><a class="nav-link ml-4 py-0" href="#item-4-2">4.2 Capital One Finance API</a></li>
+                            <li><a class="nav-link ml-2 py-0" href="#item-6">6. Mentors</a></li>
+                                <li><a class="nav-link ml-4 py-0" href="#item-6-1">6.1 Request a Mentor</a></li>
+                            <li><a class="nav-link ml-2 py-0" href="#item-7">7. Tutorials</a></li>
+                                <li><a class="nav-link ml-4 py-0" href="#item-7-1">7.1 Using Github</a></li>
+                                <li><a class="nav-link ml-4 py-0" href="#item-7-2">7.2 Submitting to DevPost</a></li>
+                                <li><a class="nav-link ml-4 py-0" href="#item-7-3">7.3 Using Github Pages</a></li>
+                                <li><a class="nav-link ml-4 py-0" href="#item-7-4">7.4 Using Slack</a></li>
+                            <li><a class="nav-link ml-2 py-0" href="#item-8">8. Submissions and Judging</a></li>
+                                <li><a class="nav-link ml-4 py-0" href="#item-8-1">8.1 Devpost</a></li>
+                                <li><a class="nav-link ml-4 py-0" href="#item-8-2">8.2 Judging Criteria</a></li>
+                        </ul> -->
+                    </div>
+               </nav>
+            </div>
+
+    <!-- Content -->
+        <main class="col-12 col-md-9 offset-md-3 live__content"  style="list-style-type: none; ">
+            <div class="container-fluid">
+                <section id="item-1" style="font-family: 'Josefin Sans';">
+
+                    <div class="row">
+                        <div class="col-11 offset-1">
+                            <ol>
+                              <li>CaloriKat</li>
+                              <li>PreSave</li>
+                              <li>Mercury Which Doctor</li>
+                              <li>Math IRL</li>
+                              <li>Bison Fin-Ed</li>
+                              <li>StartUp HU</li>
+                              <li>Silencing The Stigma</li>
+                              <li>TreeHab</li>
+                              <li>Healthy Camp</li>
+                              <li>Luenar Sleep Coach</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                </section>
+
+            </div>
+        </main>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/locale/af.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.14/moment-timezone-with-data-2012-2022.js"></script>
+    <script type="text/text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.14/moment-timezone.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.14/moment-timezone-utils.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="./js/push.min.js"></script>
+    <script type="text/javascript" src="./js/popper.min.js"></script>
+    <script type="text/javascript" src="./js/smoothscroll.js"></script>
+    <script type="text/javascript" src="./js/navigation.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+
+</body>
+</html>
