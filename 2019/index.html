@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>BisonHacks 2019</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta property="og:url" content="http://www.bisonhacks.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="BisonHacks 2019" />
+  <meta property="og:description" content="Howard University's 5th Annual Hackathon" />
+  <meta property="og:image" content="" />
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <link href="css/custom.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+  <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+  <link href="http://fonts.googleapis.com/css?family=Josefin+Sans:600,700,800|Amatic+SC:600,700,800" rel="stylesheet" type="text/css">
+
+  <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+  <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "url": "http://www.bisonhacks.com",
+        "logo": "http://bisonhacks.com/img/logo-word.png",
+        "sameAs": [
+          "http://www.facebook.com/Howard-University-Hackathon-Bison-Hacks",
+          "http://instagram.com/bisonhacks",
+          "http://twitter.com/bisonhacks"
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context" : "http://schema.org",
+        "@type" : "Event",
+        "name" : "Bison Hacks",
+        "startDate" : "2019-03-29T18:30",
+        "location" : {
+          "@type" : "Place",
+          "name" : "Mapbox",
+          "address" : {
+            "@type" : "PostalAddress",
+            "streetAddress" : "740 5th Street NW",
+            "addressLocality" : "Washington",
+            "addressRegion" : "DC",
+            "addressCountry" : "USA",
+            "postalCode" : "20005"
+          }
+        },
+        "image" : "http://bisonhacks.com/img/logo-word.png",
+        "description" : "Howard University's Official Annual 24 Hour Hackathon",
+        "url" : "http://bisonhacks.com",
+        "endDate": "2019-03-30T18:30:00Z",
+        "organizer": "Bison Hacks",
+        "offers" : {
+          "@type" : "Offer",
+          "price" : "0",
+          "priceCurrency": "USD",
+          "availability": "http://schema.org/InStock",
+          "validFrom": "2019-03-30T17:00:00Z"
+        }
+      }
+    </script>
+</head>
+
+<nav class="navbar navbar-custom navbar-fixed-top" id="navbar-custom" role="navigation">
+ <div class="container">
+   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+       <i class="fa fa-bars"></i>
+   </button>
+   <div class="collapse navbar-collapse navbar-main-collapse">
+     <ul class="nav navbar-nav  navbar-right">
+       <li>
+         <a href="#info">Info</a>
+       </li>
+       <li>
+         <a href="#judges"> Judges</a>
+       </li>
+       <li>
+         <a href="#faq">FAQ</a>
+       </li>
+       <li>
+         <a href="#sponsors">Sponsors</a>
+       </li>
+       <li>
+         <a  href="pages/resource.html">Resources</a>
+       </li>
+       <li>
+         <a href="#team">Team</a>
+       </li>
+       <li>
+         <a class="page-scroll" href="../2018/index.html">2018</a>
+       </li>
+     </ul>
+   </div>
+ </div>
+</nav>
+
+<body id="bisonhacks" data-target="#navbar-custom" data-offset="0">
+
+  <!-- Intro Header -->
+   <section>
+       <div class="container">
+
+         <div class="row">
+           <div class="col-md-6">
+             <img class="img-responsive" src="img/BHFullLogo.png">
+           </div>
+           <div  class="col-md-6 text-center information">
+             <h1>Bison Hacks</h1>
+             <h3>Howard University</h3>
+             <h3>School of Business</h3>
+             <h3> March 29-30,2019</h3>
+
+             <ul class="list-inline banner-social-buttons">
+               <li><a href="http://bit.ly/2F32kR3"><i class="fab fa-twitter fa-3x" style="color: #F45254;"></i></a></li>
+               <li><a href="http://bit.ly/2soDfx2"><i class="fab fa-facebook fa-3x" style="color: #F45254;"></i></a></li>
+               <li><a href="http://bit.ly/2CjzSrd"><i class="fab fa-instagram fa-3x" style="color: #F45254;"></i></a></li>
+             </ul>
+             <br/>
+
+             <!-- <a class="btn btn-default btn-lg sign-up-btn" href="http://bit.ly/2UI77y0" data-mode="popup"  data-submit-close-delay="5" target="_blank">Register </a> -->
+             <!-- <a class="btn btn-default btn-lg sign-up-btn" href="http://bit.ly/2HIwTzs" target="_blank">Join Slack </a> -->
+             <a class="btn btn-default btn-lg sign-up-btn" href="pages/live.html" target="_blank">Live</a>
+
+
+         </div>
+       </div>
+   </section>
+
+   <section id="map-section">
+     <div class="container">
+       <div class="row">
+         <div class="col-lg-6">
+           <div class="row">
+             <div class="col-lg-12 text-center">
+               <h3>Howard University Official Annual Hackathon</h3>
+               <h4> BISON HACKS </h4>
+             </div>
+             <label>WHERE</label>
+             <p>Inclusive Innovation Incubator Center <br/> 2301 Georgia Avene NW Washington, DC 20001</p>
+
+             <label>START</label>
+             <p>March 29, 2019 5:00PM </p>
+
+             <label>END</label>
+             <p>March 30, 2019 6:30PM </p>
+
+             <label>WHO</label>
+             <p>For students in the DMV area and Howard University students</p>
+             <br/>
+           </div>
+         </div>
+         <div class="col-lg-6">
+           <div id="map"></div>
+         </div>
+       </div>
+     </div>
+   </section>
+<br/>
+<br/>
+<br/>
+<br/>
+   <section id="schedule">
+     <div class="container">
+       <div class="row">
+         <div class="col-md-12 text-right">
+           <h1>Schedule</h1>
+         </div>
+       </div>
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+       <div class="row">
+         <div class="col-md-6 center">
+           <table>
+             <tr>
+               <th>Friday, March 29, 2019</th>
+             </tr>
+             <tr>
+               <td><span>4:00 PM </span> | Registration Open</td>
+             </tr>
+             <tr>
+               <td><span>5:00 PM </span> | Networking and Dinner Served</td>
+             </tr>
+             <tr>
+               <td><span>5:30 PM </span> | Open Ceremony</td>
+             </tr>
+             <tr>
+               <td><span>6:00 PM </span> | Hacking Begins</td>
+             </tr>
+             <tr>
+               <td><span>10:30 PM </span> | Midnight Snack</td>
+             </tr>
+             <tr>
+               <td><span>11:00 PM</span> | Slideshare Karaoke</td>
+             </tr>
+           </table>
+         </div>
+
+         <div class="col-md-6 center">
+           <table>
+             <tr>
+               <th>Saturday, March 30, 2019</th>
+             </tr>
+             <tr>
+               <td><span>8:00 AM</span> | Breakfast Served</td>
+             </tr>
+             <tr>
+               <td><span>8:30 AM</span> | Hacking Resumes</td>
+             </tr>
+             <tr>
+               <td><span>11:30 AM</span> | Lunch Served</td>
+             </tr>
+             <tr>
+               <td><span>1:00 PM</span> | Projects Due</td>
+             </tr>
+             <tr>
+               <td><span>1:30 PM</span> | Team Technical Check-in</td>
+             </tr>
+             <tr>
+               <td><span>2:00 PM</span> | Project Presentations</td>
+             </tr>
+             <tr>
+               <td><span>4:00 PM</span> | Judge Session</td>
+             </tr>
+             <tr>
+               <td><span>5:00 PM</span> | Award Ceremony</td>
+             </tr>
+           </table>
+         </div>
+       </div>
+     </div>
+   </section>
+<br/>
+<br/>
+<br/>
+<br/>
+   <section id="info" style="padding-top: 30px;" >
+     <div id="themes" class="container">
+       <div class="row">
+         <div class="col-lg-12">
+           <h1> Themes</h1>
+           <p>This year's hackathon theme is to build a solution that will help improve the livelihood of the DMV community. The tracks that can be explored are the following:</p>
+         </br>
+         </br>
+         </br>
+         </div>
+
+         <div class="row">
+           <div class="col-lg-2 text-center">
+             <i class="fa fa-book fa-5x" aria-hidden="true"></i>
+             <h3>Education</h3>
+           </div>
+           <div class="col-lg-4">
+             <p>Focuses on issues related to achievement of people of diverse ethnicities and economic backgrounds. Can include topics related to college readiness, access, completion and career guidance.</p>
+           </div>
+
+           <div class="col-lg-2 text-center">
+             <i class="fa fa-heartbeat fa-5x" aria-hidden="true"></i>
+             <h3>Health, Food & Wellness</h3>
+           </div>
+           <div class="col-lg-4">
+             <p>Focuses on issues related to the public health of people of diverse ethnicities and economic backgrounds such as improving wellness, increasing diversity in the medical profession, quality food access, and promoting diet and exercise.</p>
+           </div>
+         </div>
+       </br>
+       </br>
+
+         <div class="row">
+           <div class="col-lg-2 text-center">
+             <i class="fa fa-gavel fa-5x" aria-hidden="true"></i>
+             <h3>Restorative Justice</h3>
+           </div>
+           <div class="col-lg-4">
+             <p>Seeks solutions related to preventing the criminalization of economically disadvantaged people, and strategies that empower ex-offenders to transition from the prison wall to successful members of the community, and provide valuable intervention resources to high school or college dropouts.</p>
+           </div>
+           <div class="col-lg-2 text-center">
+             <i class="fa fa-tree fa-5x" aria-hidden="true"></i>
+             <h3>Environmental Sustainability</h3>
+           </div>
+           <div class="col-lg-4">
+             <p>Challenges participants to create an app or design solutions that preserves our environment and encourages personal practices such as recycling, resource sharing, garment collection and redistribution, energy efficiency, and water conservation.</p>
+           </div>
+         </div>
+       </br>
+       </br>
+
+         <div class="row">
+           <div class="col-lg-2 text-center">
+             <i class="fa fa-calculator fa-5x" aria-hidden="true"></i>
+             <h3>Financial Inclusion & Literacy</h3>
+           </div>
+           <div class="col-lg-4">
+             <p> Create apps that help increase access for everyone to a range of quality financial services at affordable prices with convenience, respect, and dignity and includes the ability to understand how to save, credit card usage, and improve one's well-being through the conscious management of their personal and private finances and investments.</p>
+           </div>
+         </div>
+       </div>
+     </div>
+
+   <br/>
+   <br/>
+   <br/>
+   <br/>
+   <br/>
+   <br/>
+
+     <div id="sponsor-challenge" class="container">
+       <div class="row">
+         <div class="col-lg-12 text-center">
+           <h1>Sponsor Challenge</h1>
+         </div>
+       </div>
+     <br/>
+     <br/>
+     <br/>
+     <br/>
+     <br/>
+     <br/>
+       <div class="row">
+         <div class="col-lg-6 text-center">
+           <img src="img/bison-vr.png"/>
+         </br/>
+         <br/>
+           <h2>Wayfair AR/VR Challenge</h2>
+           <a data-toggle="modal" data-target="#wayfair-challenge" class="btn btn-default btn-lg sign-up-btn">Learn More</a>
+         </div>
+         <div class="col-lg-6 text-center">
+           <img src="img/bison-sg.png"/>
+           <h2>JP Morgan & Chase Best Hack for Empowering Entrepreneurs of Color Challenge </h2>
+           <a data-toggle="modal" data-target="#jpmorgan-challenge" class="btn btn-default btn-lg sign-up-btn">Learn More</a>
+         </div>
+         <div class="col-lg-12 text-center" style="padding-top: 70px !important;">
+           <img src="img/c1challenge.png"/>
+           <h2>Capital One Best Financial Hack Challenge</h2>
+           <a data-toggle="modal" data-target="#capitalone-challenge" class="btn btn-default btn-lg sign-up-btn">Learn More</a>
+         </div>
+       </div>
+
+       <div id="wayfair-challenge" class="modal fade" role="dialog">
+         <div class="modal-dialog">
+           <div class="modal-content">
+             <div class="modal-body">
+               <button type="button" class="close" data-dismiss="modal">&times;</button>
+               <div class="row">
+                <div class="col-md-12 text-center" style="padding:40px 50px;">
+                  <h3>We Challenge You!</h3>
+                  <p>Augmented and Virtual Reality has taken a huge focus in the technology industry. Many companies are exploring how they can use these new tools to help enhance their consumers' experience. For 2019 Wayfair is sponsoring an AR/VR Hackathon Challenge at Bison Hacks!
+                    Wayfair is looking to award a team who can find a creative way to use 3D models of their furniture and their API.  You can check out their API and documentation through this <a href="https://documenter.getpostman.com/view/427064/RWgqVK43">link</a>.</p>
+                </div>
+              </div>
+              <button type="button" class="btn btn-default btn-block sign-up-btn" data-dismiss="modal">Close</button>
+             </div>
+           </div>
+         </div>
+       </div>
+
+       <div id="jpmorgan-challenge" class="modal fade" role="dialog">
+         <div class="modal-dialog">
+           <div class="modal-content">
+             <div class="modal-body">
+               <button type="button" class="close" data-dismiss="modal">&times;</button>
+               <div class="row">
+                <div class="col-md-12 " style="padding:40px 50px;">
+                  <h3 class="text-center">We Challenge You!</h3>
+                  <p>"People of color often face unique challenges as entrepreneurs and small business owners.
+                    Some of these challenges include defying social expectations, gaining access to capital,
+                    being part of business networks, finding a community of like-minded mentors, and knowledge
+                    of how to effectively and strategically partner with local government."
+                  </p>
+                  <p>For this challenge, JP Morgan & Chase would like for you to develop a technology project that would help inspire,
+                    empower and equip more entrepreneurs and small business owners of color with the resources they need to succeed.
+                     To help generate some ideas here are some questions to consider:</p>
+                     <ul style="font-family: 'Josefin Sans';">
+                       <li>How can local business associations and local government better reach and encourage first-time entrepreneurs of color and small business owners?</li>
+                       <li>How can we create a community among entrepreneurs and small business owners of color so they can share best practices, resources, and mentorship opportunities with each other?</li>
+                       <li>How can entrepreneurs of color more easily know if they qualify for special funding and resources from local government or business councils?</li>
+                       <li>How can cities experiencing growth in economic development better spread the word about small business opportunities, particularly to entrepreneurs?</li>
+                       <li>How can governments, venture capitalists, banks and other financial institution better support entrepreneurs and small business owners of color with access to capital?</li>
+                     </ul>
+                   </br>
+                <p>The "<b>Judging Criteria</b>" for this challenge is as follows:</p>
+                  <ul style="font-family: 'Josefin Sans';">
+                    <li><b>Impact</b>: How well does this solution address this challenge or problem?</li>
+                    <li><b>Innovation & Creativity</b>: Does it bring new ideas and approaches to solving the problem?</li>
+                    <li><b>Completeness of Solution</b>: Does it work? If not, is there a roadmap for future enhancements?</li>
+                    <li><b>Sustainability</b>: Is the solution sustainable within the context of the community it's aiming to impact?</li>
+                    <li><b>Design</b>: Is the solution well thought out and designed?</li>
+                  </ul>
+                  <p>The prize for winning this challenge is that each member will receive <b>"Bose Soundlink Bluetooth Speakers."</b></p>
+                </div>
+              </div>
+              <button type="button" class="btn btn-default btn-block sign-up-btn" data-dismiss="modal">Close</button>
+             </div>
+           </div>
+         </div>
+       </div>
+
+       <div id="capitalone-challenge" class="modal fade" role="dialog">
+         <div class="modal-dialog">
+           <div class="modal-content">
+             <div class="modal-body">
+               <button type="button" class="close" data-dismiss="modal">&times;</button>
+               <div class="row">
+                <div class="col-md-12 text-center" style="padding:40px 50px;">
+                  <h3>We Challenge You!</h3>
+                  <p>
+                    At Capital One we strive to "Change Banking For Good" and we're always looking for ways to utilized technology to improve the lives of our customers. This weekend we want to see what business and technology ideas you'll come up with, that will make a positive impact on individuals, communities, or society as a whole. We'll be judging for the Best Financial Hack and will be looking for Creativity, Complexity, and Completeness in your projects. Each member of our winning team will receive a $250 Amazon Gift Card. Check out our API <a href="http://api.reimaginebanking.com/">here.</a>
+                  </p>
+                </div>
+              </div>
+              <button type="button" class="btn btn-default btn-block sign-up-btn" data-dismiss="modal">Close</button>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+
+     <br/>
+     <br/>
+     <br/>
+     <br/>
+     <br/>
+     <br/>
+
+     <div id="prizes" class="container">
+       <div class="row">
+         <div class="col-lg-12">
+           <h1>Prizes</h1>
+         </div>
+       </div>
+       <br/>
+       <br/>
+       <br/>
+
+       <div class="row text-center">
+         <div class="col-lg-3" id="firstplace">
+           <i class="fas fa-trophy fa-5x"></i>
+           <h2>1st Place</h2>
+           <h3>$5,000</h3>
+         </div>
+         <div class="col-lg-3" id="secondplace">
+           <i class="fas fa-trophy fa-5x"></i>
+
+           <h2>2nd Place</h2>
+           <h3>$3,000</h3>
+
+         </div>
+         <div class="col-lg-3" id="thirdplace">
+           <i class="fas fa-trophy fa-5x"></i>
+
+           <h2>3rd Place </h2>
+           <h3>$2,000</h3>
+         </div>
+         <div class="col-lg-3" id="innovation">
+           <i class="fas fa-lightbulb fa-5x"></i>
+           <h2>Best Innovation</h2>
+           <h3>$1,000</h3>
+         </div>
+       </div>
+     </div>
+   </section>
+
+   <section id="judges">
+     <div class="container">
+       <div class="row">
+         <div class="col-lg-12 text-center">
+           <h1>Judges</h1>
+         </div>
+       </div>
+       <br/>
+       <br/>
+       <br/>
+       <div class="row text-center">
+         <div class="col-lg-2 text-center">
+           <img class="center-block  img-thumbnail" src="img/judges/nackerson.jpeg"/>
+           <h3>Noble Ackerson</h3>
+         </div>
+         <div class="col-lg-2 text-center">
+           <img class=" img-thumbnail" src="img/judges/ahall.jpeg"/>
+           <h3>Anita Hall</h3>
+         </div>
+         <div class="col-lg-2 text-center">
+           <img class=" img-thumbnail" src="img/judges/dgoods.jpeg"/>
+           <h3>Darryl Goods</h3>
+         </div>
+         <div class="col-lg-2 text-center">
+           <img class=" img-thumbnail" src="img/judges/amoody.jpeg"/>
+           <h3>Alexis Moody</h3>
+         </div>
+         <div class="col-lg-2 ">
+           <img class=" img-thumbnail" src="img/judges/ynkfum.jpeg"/>
+           <h3>Yong Nkfum</h3>
+         </div>
+         <div class="col-lg-2 ">
+           <img class=" img-thumbnail" src="img/judges/chamilton.jpg"/>
+           <h3>Christopher Hamilton</h3>
+         </div>
+       </div>
+     </div>
+   </section>
+
+   <section id="faq" data-spy="scroll">
+     <div class="container">
+       <div class="row">
+         <div class="col-md-12 text-right">
+           <h1>FAQ</h1>
+         </div>
+         <div class="col-md-12">
+           <ul class="nav nav-tabs" id="myTab" role="tablist">
+             <li class="nav-item">
+               <a class="nav-link active" id="general-tab" data-toggle="tab" href="#general" role="tab" aria-controls="general" aria-selected="true">General</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" id="applying-tab" data-toggle="tab" href="#applying" role="tab" aria-controls="applying" aria-selected="false">Applying</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" id="rules-tab" data-toggle="tab" href="#rules" role="tab" aria-controls="rules" aria-selected="false">Rules</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" id="logistics-tab" data-toggle="tab" href="#logistics" role="tab" aria-controls="logistics" aria-selected="false">Logistics</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" id="mentor-tab" data-toggle="tab" href="#mentor" role="tab" aria-controls="mentor" aria-selected="false">Mentor</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" id="sponsorsinfo-tab" data-toggle="tab" href="#sponsorsinfo" role="tab" aria-controls="sponsorsinfo" aria-selected="false">Sponsors</a>
+             </li>
+           </ul>
+           <div class="tab-content" id="myTabContent">
+             <div class="tab-pane active" id="general" role="tabpanel" aria-labelledby="general-tab">
+               <!-- fade show active -->
+               <div class="row">
+                 <div class="col-lg-4">
+                   <label>What is a hackathon?</label>
+                   <p>A hackathon is a weekend long event where you go all the way from idea to prototype. At the end of BisonHacks, you will pitch your app, website, or whatever prototype you dreamed up, and compete for prizes! Hackathons are a great place to learn quickly and create something awesome.</p>
+                 </div>
+                 <div class="col-lg-4">
+                   <label>How much does it cost?</label>
+                   <p>BisonHacks is completely free for all registered participants! The food is free and all the awesome swag is free.</p>
+                 </div>
+                 <div class="col-lg-4">
+                   <label>Will there be food?</label>
+                   <p>Absolutely! We have four delicious meals planned with plenty of snacks in between to keep you going for 24 hours.</p>
+                 </div>
+                 <div class="col-lg-4">
+                   <label>What should I bring?</label>
+                   <p>Bring you, your computer, computer charger, toiletries (toothbrush and toothpaste), and anything else for your hack.</p>
+                 </div>
+                 <div class="col-lg-4">
+                   <label>This is my first hackathon!</label>
+                   <p>You're more than welcome at BisonHacks! We will have workshops during the event and mentors to help you through any troubles. So no matter what your skill level is, we will provide the resources to help you learn.</p>
+                 </div>
+                 <div class="col-lg-4">
+                   <label>Do you have a Code of Conduct?</label>
+                   <p>Yes! Check out our <a href="">Code of Conduct</a>.
+                 </div>
+               </div>
+             </div>
+             <div class="tab-pane fade" id="applying" role="tabpanel" aria-labelledby="applying-tab">
+               <div class="row">
+                 <div class="col-lg-4">
+                   <label> Who can attend this hackathon?</label>
+                   <p>Bison Hacks is open to Howard University students and anyone who is 18 years or older (we will be checking ID) and is currently enrolled in college or university with a valid student ID. International students are invited to apply and attend, but we cannot guarantee full travel reimbursement.</p>
+                 </div>
+                 <div class="col-lg-4">
+                   <label>Are walk-ins welcomed?</label>
+                   <p>Due to the location we are only allowed to have attendees who have registered for the hackathon. Therefore, if you are interested attending this event please register at this<a href=""> link</a>.</p>
+                 </div>
+                 <div class="col-lg-4">
+                   <label>Are graduate students welcomed to attend?</label>
+                   <p>Howard University graduate student's are welcomed to register for this hackathon.</p>
+                 </div>
+               </div>
+             </div>
+             <div class="tab-pane fade" id="rules" role="tabpanel" aria-labelledby="rules-tab">
+               <div class="row">
+                 <div class="col-lg-4">
+                   <label>How many students per a team?</label>
+                   <p>There can be a maximum of 4 students for a team.</p>
+                 </div>
+                 <div class="col-lg-4">
+                   <label>What if I can't find a team?</label>
+                   <p>That is fine, you have the option to work alone but we highly recommend that you work in a team.</p>
+                 </div>
+                 <div class="col-lg-4">
+                   <label>What are the requirements for a team?</label>
+                   <p>Teams are encouraged to have a mix of business, engineering, and design oriented students. Diversity is encouraged. However, teams are required to choose a name.</p>
+                 </div>
+                 <div class="col-lg-4">
+                   <label>What are the requirementes for the project?</label>
+                   <p>Team projects can be brainstormed beforehand, but code <b>MUST</b> be written at the event only. <b>Code cannot be brought in from outside the event</b> . Cheating of any kind will not be tolerated. The project must contain a README within the repository that describes the project.</p>
+                 </div>
+                 <div class="col-lg-4">
+                   <label>What are some tools that we can use within our project?</label>
+                   <p>You can use any tool, API, service or language for your team project.</p>
+                 </div>
+                 <div class="col-lg-4">
+                   <label>How long are presentations for our project?</label>
+                   <p>A 3 min presentation is required during judging, explaining and demonstrating the team’s application. In addition 1 minute will be allowed for questions.</p>
+                 </div>
+                 <div class="col-lg-4">
+                   <label>Where do we submit our project?</label>
+                   <p>All projects must be submitted into our Bison Hacks DevPost by March 30, 2019 at 1:30PM.</p>
+                 </div>
+                 <div class="col-lg-4">
+                   <label>What format can our team project be?</label>
+                   <p>Your project can be a mobile application, web application or IoT project. The project must fit into the theme set for the event.</p>
+                 </div>
+                 <div class="col-lg-4">
+                   <label>What are the items that are not permitted in our projects?</label>
+                   <p>Projects must not contain any advertisement or solicitation. Projects must not contain anything that is or may be construed as:</p>
+                     <ul>
+                       <li>Threatening, harassing, degrading or hateful.</li>
+                       <li>Defamatory.</li>
+                       <li>Fraudulent or tortious.</li>
+                       <li>Obscene, indecent or otherwise objectionable; or (v) protected by copyright, trademark or other proprietary right without the express prior consent of the owner of such right</li>
+                     </ul>
+                      <p>Projects must not contain any material that would give rise to criminal or civil liability or that encourages conduct that constitutes a criminal offense; and Projects must otherwise comply in all respects with these Rules and the Policies.</p>
+                 </div>
+                 <div class="col-lg-4">
+                   <label>How many judges will be at this hackathon?</label>
+                   <p>We will have 4-5 judges for this hackathon. Our judges will be key members within the DC Tech Industry. Their backgrounds will cover technology, design, marketing and entrepreneurship. To learn more about the judges check them out here.</p>
+                 </div>
+                 <div class="col-lg-12">
+                   <label>What are the judging criterias?</label>
+                   <ul>
+                     <li><b>Business Model.</b> Outside of technical impressiveness in the project, during this hackathon judges will be looking for how teams communicate customer validation (Who are your users?) and acquisition strategy (How will you attract your users?). Those two pillars will help validate the idea.</li>
+
+                     <li><b>Impact.</b> Our theme this year is to create a solution that will help improve the betterment of the DMV community. In this category we are looking for key factors that shows how the team's idea is scalable and give a clear measure as to how thier solution makes an impact on the user's life.</li>
+
+                     <li><b>Technical.</b> In the midst of the given 24 hours the judges will be looking for an established minimum viable product and a working prototype . This can range from a web application, mobile application or an IoT.</li>
+
+                     <li><b>Design and User Experience.</b> The teams final minimum viable product and prototype should achieve an engaging and memorable user experience. This means having a clear interface that is intuitive for users that come from different backgrounds.</li>
+
+                     <li><b>Presentation.</b> Teams will be rated base off presentation layout and articulation of their solution. This means how well was the team able to communicate their target audience, problems they are solving and how their product is the solution to that problem.</li>
+                   </ul>
+                 </div>
+               </div>
+             </div>
+             <div class="tab-pane fade" id="logistics" role="tabpanel" aria-labelledby="logistics-tab">
+               <div class="row">
+                 <div class="col-lg-4">
+                   <label>Will there be free parking provided?</label>
+                   <p>Unfortunately, there won't be free parking but only street parking.</p>
+                 </div>
+                 <div class="col-lg-4">
+                   <label>Is there any travel reimbursement?</label>
+                   <p>Unfortunately, we will not be offering individual travel reimbursement this year.</p>
+                 </div>
+                 <div class="col-lg-4">
+                   <label>What are the closest Metro's to this location?</label>
+                   <p>To travel to this location the closest metros are Shaw and U Street.</p>
+                 </div>
+                 <div class="col-lg-4">
+                   <label>Will there be other activities other than hacking at this event?</label>
+                   <p>Of course! This year, our hacker experience team has planned a bunch of fun events for attendees to relax. Stay tuned for more info! We will have a small activity in the midst of the event.</p>
+                 </div>
+                 <div class="col-lg-4">
+                   <label>Do I have to be there for the entire hackathon?</label>
+                   <p>Due to the security of the building it would be ideal that you stay for the entire event. However, if you need to leave and comeback please inform the Hackathon Organizers.</p>
+                 </div>
+               </div>
+             </div>
+             <div class="tab-pane fade" id="mentor" role="tabpanel" aria-labelledby="mentor-tab">
+               <div class="row">
+                 <div class="col-lg-6">
+                   <label>I am interested in being a mentor, how do I sign up to be one?</label>
+                   <p>That is great! We welcome any help! To sign up as a mentor you can simply select "Mentor" on the form within the registration link <a href="">here</a>.</p>
+                 </div>
+                 <div class="col-lg-6">
+                   <label>Do I have to have a technological background in order to be a mentor?</label>
+                   <p>Although, it is ideal but it is not a requirement. We welcome anyone who have experience in entrepreneurship, marketing, finance and technology.</p>
+                 </div>
+                 <div class="col-lg-12">
+                   <label>What are the roles of a mentor?</label>
+                   <p>The role of a "Tech" or "Business" mentor is to be floating resources for the duration of the hackathon. This means helping teams define workflow, brainstorm ideas, problem solve and develop the final presentation. Mentors are free to communicate amongst themselves on questions of observations that occur. As organizers, we would be glad to gain some insight on technical issues, hackathon dynamics, or other Bison Hacks materials. Here are a few pointers to keep in mind as a Bison Hacks mentor:</p>
+                   <ul>
+                     <li><b>Be available for participants.</b> Participants will contact mentors that they believe will be able to address their questions. Responding to teams questions is not a 24/7 responsibility, but please do check the communication channels and get back to the participants in a reasonable time frame. Within the Eventbrite link, there are 4-hour time slots, that mentors can choose.</li>
+                     <li><b>Offer what you know.</b> It is best to acknowledge that you are not well-versed in the subject than to point teams down a sub-optimal path. If you are unable to answer the question it is fine giving the team some online resources or refer them to another mentor that may specialize in the area of interest.</li>
+                     <li><b>You are a mentor.</b> It may be tempting but mentors are not allowed to join or contribute to a team. That includes writing a few lines of code or writing a couple bullets on their pitch decks. Providing pointers, references to examples and advice about design concepts are all in-bounds of the role of a mentor.</li>
+                     <li><b>Share questions and answers.</b> Bison Hacks is a learning hackathon and we feel that every team can benefit from questions asked and answered on team-to-mentor interactions. We strongly encourage to summarize questions/answers for posting to the whole group of participants. As we approach the kick-off date, the Bison Hacks Team will announce how information can be shared amongst participants and how mentors should publish to the communication channels.</li>
+                   </ul>
+                 </div>
+               </div>
+             </div>
+
+             <div class="tab-pane fade" id="sponsorsinfo" role="tabpanel" aria-labelledby="sponsorsinfo-tab">
+               <div class="row">
+                 <div class="col-lg-4">
+                   <label>How do I sponsor this event?</label>
+                   <p>First! Thank you for wishing to sponsor our hackathon! To sponsor our event you can view our sponsorhsip package here and send an email to bisonhacks@gmail.com.</p>
+                 </div>
+                 <div class="col-lg-4">
+                   <label>What does the funds cover for this event?</label>
+                   <p>The funds goes towards food, prizes and the swag for the hackathon. We go into more detail within our sponsorship package <a href="">here</a>.</p>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </section>
+
+   <section id="sponsors">
+     <div class="container">
+       <div class="row">
+         <div class="col-lg-12 text-center">
+           <h1>Sponsors</h1>
+         </div>
+       </div>
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <img src="img/dcacm.png" style="padding-bottom: 35px;">
+        </div>
+
+        <div class="col-md-12 text-center">
+          <img src="img/GM_Foundation.png" style="padding-bottom: 1px !important;"/>
+        </div>
+
+        <div class="col-lg-12 text-center">
+          <img style="max-width:45%;" src="img/aws_logo_smile.png"/>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img src="img/AWS-InCommunities-dark.png"/>
+        </div>
+
+        <div class="col-lg-6 text-center">
+          <img src="img/techuaws.png"/>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img src="img/wepowertech.png"/>
+        </div>
+
+        <div class="col-lg-6 text-center">
+          <img src="img/boeing.png" style="padding-top: 75px;"/>
+        </div>
+
+        <div class="col-lg-7 text-center">
+          <img src="img/wayfair.png" style="padding-bottom: 38px !important;">
+        </div>
+        <div class="col-lg-5 text-center" style="top:77px;">
+          <img src="img/jpmorgan.png">
+        </div>
+        <div class="col-lg-6">
+          <img src="img/c1.png" style="padding-top: 70px;">
+        </div>
+
+        <div class="col-sm-6 text-center">
+          <img src="img/lyft.png" style="padding-top: 54px; max-width:40% !important;">
+        </div>
+        <div class="col-sm-12 text-center">
+          <img src="img/nsa-logo.png" style="max-width: 20% !important;"/>
+        </div>
+
+      </div>
+
+
+     </div>
+   </section>
+
+   <section id="team">
+     <div class="container">
+       <div class="row">
+         <div class="col-lg-12">
+           <h1>Team</h1>
+         </div>
+       </div>
+       <br/>
+       <br/>
+       <br/>
+       <div class="row text-center">
+         <div class="col-lg-2">
+           <img class="img-thumbnail" src="img/team/aphillips.png"/>
+           <h3>Afeeni Phillips</h3>
+           <p>Logistics</p>
+         </div>
+         <div class="col-lg-2">
+           <img class="img-thumbnail" src="img/team/achopade.png" style="height:245px !important;"/>
+           <h3>Apurva Chopade</h3>
+           <p>Logistics</p>
+         </div>
+         <div class="col-lg-2">
+           <img class="img-thumbnail" src="img/team/awalker.png"/>
+           <h3>Azana Walker</h3>
+           <p>Logistics</p>
+         </div>
+         <div class="col-lg-2">
+           <img class="img-thumbnail" src="img/team/jgiles.png"/>
+           <h3>Ja'Mya Giles</h3>
+           <p>Design</p>
+         </div>
+         <div class="col-lg-2">
+           <img class="img-thumbnail" src="img/team/vnguyen.png"/>
+           <h3>Victoria Nguyen</h3>
+           <p>Logistics</p>
+         </div>
+         <div class="col-lg-2">
+           <img class="img-thumbnail" src="img/team/jfletcher.jpg"/>
+           <h3>Joseph Fletcher</h3>
+           <p>Tech</p>
+         </div>
+         <div class="col-lg-2">
+           <img class="img-thumbnail" src="img/team/bgrant.png"/>
+           <h3>Bryanna Grant</h3>
+           <p>Marketing</p>
+         </div>
+         <div class="col-lg-2">
+           <img class="img-thumbnail" src="img/team/khall.png"/>
+           <h3>Kendall Hall</h3>
+           <p>Logistics</p>
+         </div>
+       </div>
+     </div>
+   </section>
+   <br/>
+   <br/>
+   <br/>
+   <br/>
+   <br/>
+   <br/>
+   <br/>
+   <br/>
+   <br/>
+   <br/>
+   <br/>
+   <br/>
+
+   <section>
+     <div class="container text-center">
+       <h1>Contact Us!</h1>
+       <p style="font-size: 25px;">Email bisonhacks@gmail.com</p>
+       <!--<p style="font-size: 25px;">Join Our Slack Channel <a href="https://bisonhacks.slack.com/messages/C9HK2UK5X/">here</a></p> -->
+     </div>
+   </section>
+
+  <footer>
+    <div class="container text-center">
+      <img src="img/howardu_clocktower_logo.png" style="max-width: 30%;"/>
+      <br/>
+      <br/>
+      <br/>
+      <p>Copyright &copy; Howard University Department of Computer Information Systems 2019</p>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+  <script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
+  var map = new mapboxgl.Map({
+      style: 'mapbox://styles/mapbox/light-v9',
+      center: [-77.021680,38.920810],
+      zoom: 16.5,
+      pitch: 45,
+      bearing: -17.6,
+      container: 'map'
+  });
+
+  map.addControl(new mapboxgl.NavigationControl());
+
+  map.on('load', function() {
+    map.loadImage('img/BisonHead.png', function(error, image) {
+    if (error) throw error;
+    map.addImage('BisonHead', image);
+    map.addLayer({
+        "id": "points",
+        "type": "symbol",
+        "source": {
+          "type": "geojson",
+          "data": {
+            "type": "FeatureCollection",
+            "features": [{
+              "type": "Feature",
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-77.021680,38.920810]
+              }
+            }]
+          }
+        },
+    "layout": {
+      "icon-image": "BisonHead",
+      "icon-size": 0.25
+          }
+      });
+    });
+
+
+    // Insert the layer beneath any symbol layer.
+    var layers = map.getStyle().layers;
+
+    var labelLayerId;
+    for (var i = 0; i < layers.length; i++) {
+    if (layers[i].type === 'symbol' && layers[i].layout['text-field']) {
+    labelLayerId = layers[i].id;
+    break;
+    }
+    }
+
+    map.addLayer({
+      'id': '3d-buildings',
+      'source': 'composite',
+      'source-layer': 'building',
+      'filter': ['==', 'extrude', 'true'],
+      'type': 'fill-extrusion',
+      'minzoom': 15,
+      'paint': {
+        'fill-extrusion-color': '#F45254',
+
+        // use an 'interpolate' expression to add a smooth transition effect to the
+        // buildings as the user zooms in
+        'fill-extrusion-height': [
+          "interpolate", ["linear"], ["zoom"],
+          15, 0,
+          15.05, ["get", "height"]
+        ],
+        'fill-extrusion-base': [
+          "interpolate", ["linear"], ["zoom"],
+          15, 0,
+          15.05, ["get", "min_height"]
+        ],
+        'fill-extrusion-opacity': .6
+      }
+    }, labelLayerId);
+
+
+  });
+
+  </script>
+</body>
+
+</html>

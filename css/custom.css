@@ -1,5 +1,5 @@
 h1, h2 {
-    font-family: 'Amatic SC', cursive !important;
+    font-family: 'Open Sans', cursive !important;
     font-weight: bolder !important;
     line-height: 46px;
     margin: 0 0 23px 0;
@@ -7,21 +7,21 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 95px !important;
-  }
+    font-size: 95px !important;
+}
 
 h2 {
-  font-size: 46px !important;
-  font-weight: bold;
+    font-size: 46px !important;
+    font-weight: bold;
 
 }
 
 h3 {
-    font-family: 'Josefin Sans', sans-serif !important;
+    font-family: 'Open Sans', sans-serif !important;
     font-size: 16px;
     font-weight: bold !important;
     color: #444242 !important;
-  }
+}
 
 html {
     overflow: hidden;
@@ -36,18 +36,18 @@ body {
 }
 
 nav {
-  background-color: #ffffff;
+    background-color: #ffffff;
 }
 
 p {
-  font-family: 'Josefin Sans', sans-serif !important;
-  color: #444242 !important;
+    font-family: 'Open Sans', sans-serif !important;
+    color: #444242 !important;
 }
 
 .navbar-nav>li>a {
-  font-family: 'Amatic SC', sans-serif;
-  font-size: 40px;
-  /* color: #163962; */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    /* color: #163962; */
 }
 
 nav>li>a:focus, .nav>li>a:hover {
@@ -56,35 +56,35 @@ nav>li>a:focus, .nav>li>a:hover {
 }
 
 .information {
-  padding-top: 200px;
+    padding-top: 200px;
 }
 
 .fs {
-  font-size: 16px;
+    font-size: 16px;
 }
 
 .fm {
-  font-size: 32px;
+    font-size: 32px;
 }
 
 .fl {
-  font-size: 64px;
+    font-size: 64px;
 }
 
 .sign-up-btn {
-  font-family: 'Josefin Sans', sans-serif !important;
-  font-weight: bold;
-  background-color: #F45254 !important;
-  color: #ffffff !important;
-  border-style: none !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: bold;
+    background-color: #F45254 !important;
+    color: #ffffff !important;
+    border-style: none !important;
 }
 
 .nav-tabs {
     border-bottom: none !important;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Open Sans', cursive;
     font-size: 30px;
     padding-bottom: 20px;
-  }
+}
 
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
     border: none !important;
@@ -92,151 +92,118 @@ nav>li>a:focus, .nav>li>a:hover {
 
 .nav-tabs>li>a:hover {
     border-color: transparent !important;
-  }
+}
 
 label {
-  display: inline-block;
-  max-width: 100%;
-  margin-bottom: 5px;
-  font-weight: bolder;
-  font-family: 'Josefin Sans',  sans-serif;
-  font-size: 18px;
-  padding-bottom: 7px;
-  padding-top: 5px;
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: bolder;
+    font-family: 'Open Sans',  sans-serif;
+    font-size: 18px;
+    padding-bottom: 7px;
+    padding-top: 5px;
 }
 
 #myTabContent p {
-  font-size: 16px !important;
+    font-size: 16px !important;
 }
 
 #myTabContent ul li {
-  font-family: 'Josefin Sans',  sans-serif;
-  font-size: 16px !important;
+    font-family: 'Open Sans',  sans-serif;
+    font-size: 16px !important;
 
 }
 
 #mentor  .col-lg-6 {
-  padding-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 #rules .col-lg-12 {
-  padding-top: 50px;
+    padding-top: 50px;
 }
 
 footer {
-  padding-top: 200px;
+    padding-top: 200px;
 }
 
 #sponsors img {
-  padding-bottom: 100px;
-  max-width: 85% !important;
+    padding-bottom: 100px;
+    max-width: 85% !important;
 }
 
 #sponsors h1 {
-  padding-bottom: 60px;
+    padding-bottom: 60px;
 }
 
 section#sponsors {
-  padding-top: 150px;
-  padding-bottom: 60px;
+    padding-top: 150px;
+    padding-bottom: 60px;
 }
 
 #info h3 {
-  font-family: 'Amatic SC', cursive !important;
-  color: #337ab7 !important;
-  font-weight: bolder;
+    font-family: 'Open Sans', cursive !important;
+    color: #337ab7 !important;
+    font-weight: bolder;
 }
 
 svg {color: #F45254 !important;}
 
 #firstplace .fa-5x {
-  font-size: 10em !important;
-  color: #D4AF37 !important;
+    font-size: 10em !important;
+    color: #D4AF37 !important;
 }
 
 #secondplace .fa-5x {
-  font-size: 10em !important;
-  color: #C0C0C0 !important;
+    font-size: 10em !important;
+    color: #C0C0C0 !important;
 }
 
 #thirdplace .fa-5x {
-  font-size: 10em !important;
-  color: #cd7f32 !important;
+    font-size: 10em !important;
+    color: #cd7f32 !important;
 }
 
 #innovation .fa-5x {
-  font-size: 10em !important;
+    font-size: 10em !important;
 }
 
 #themes p{
-  font-size: 16px;
+    font-size: 16px;
 }
 
 section#info {
-  padding-top: 300px;
-  padding-bottom: 100px;
+    padding-top: 300px;
+    padding-bottom: 100px;
 }
 
 section#faq {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-#map {
-  width: 100%;
-  height: 555px;
-}
-
-#map-section h3 {
-  font-family: 'Amatic SC', cursive !important;
-  color: #337ab7 !important;
-  font-size: 35px;
-
-}
-
-#map-section h4 {
-  color: #444242 !important;
-}
-
-#map-section label {
-  font-family: 'Amatic SC', cursive !important;
-  font-weight: bolder;
-  font-size: 35px;
-  color: #F45254 !important;
-}
-
-#map-section p {
-  font-size: 16px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 td {
-  padding:  10px 0px 15px 15px !important;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 18px;
-  color: #444242;
+    padding:  10px 0px 15px 15px !important;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    color: #444242;
 }
 
 td span {
-  font-weight: bolder;
+    font-weight: bolder;
 }
 
 th {
-  font-size: 35px;
-  font-family: 'Amatic SC', cursive;
-  color: #F45254;
-  font-weight: bold;
-}
-
-#team h3 {
-  font-family: 'Amatic SC', cursive;
-  color: #337ab7 !important;
-
+    font-size: 35px;
+    font-family: 'Open Sans', cursive;
+    color: #F45254;
+    font-weight: bold;
 }
 
 .img-thumbnail {
-  border: none !important;
+    border: none !important;
 }
 
 #judges h3 {
-  color: #337ab7 !important;
+    color: #337ab7 !important;
 }
