@@ -37,8 +37,13 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    <!-- Mapbox Map Resources -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
 
     <script type="application/ld+json">
         {
@@ -86,14 +91,13 @@
         }
     </script>
 </head>
-
 <nav class="navbar navbar-custom navbar-fixed-top" id="navbar-custom" role="navigation">
     <div class="container">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-            <i class="fa fa-bars"></i>
+            <i class="fa fa-bars fa-2x" style="color: #282E75 !important;"></i>
         </button>
         <div class="collapse navbar-collapse navbar-main-collapse">
-            <ul class="nav navbar-nav  navbar-right">
+            <ul class="nav navbar-nav">
                 <li>
                     <a href="#info">Info</a>
                 </li>
@@ -104,70 +108,74 @@
                     <a href="#sponsors">Sponsors</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="./2018/index.html">2018</a>
-                </li>
-                <li>
                     <a class="page-scroll" href="./2019/index.html">2019</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
+<img src="img/hero-confetti2.png" style="position: absolute; top: 0; width:100%;"/>
 
 <body id="bisonhacks" data-target="#navbar-custom" data-offset="0">
 
 <!-- Intro Header -->
 <section>
+<br/>
     <div class="container">
 
         <div class="row">
-            <div class="col-md-6">
-                <img class="img-responsive" src="img/bh202logo.png">
-            </div>
-            <div  class="col-md-6 text-center information">
-                <h1>Bison Hacks</h1>
-                <h3>Howard University</h3>
-                <h3>School of Business</h3>
-                <h3>February 28-29,2020</h3>
 
-                <ul class="list-inline banner-social-buttons">
-                    <li><a href="http://bit.ly/2F32kR3"><i class="fab fa-twitter fa-3x" style="color: #F45254;"></i></a></li>
-                    <li><a href="http://bit.ly/2soDfx2"><i class="fab fa-facebook fa-3x" style="color: #F45254;"></i></a></li>
-                    <li><a href="http://bit.ly/2CjzSrd"><i class="fab fa-instagram fa-3x" style="color: #F45254;"></i></a></li>
-                </ul>
+            <div class="col-md-12">
+                <img class="img-responsive center-block" style="max-width: 35%;" src="img/bh202logo.png">
                 <br/>
-
-                 <a class="btn btn-default btn-lg sign-up-btn" href="http://bit.ly/2UI77y0" data-mode="popup"  data-submit-close-delay="5" target="_blank">Register </a>
-                <!-- <a class="btn btn-default btn-lg sign-up-btn" href="http://bit.ly/2HIwTzs" target="_blank">Join Slack </a> -->
-                <!-- <a class="btn btn-default btn-lg sign-up-btn" href="pages/live.html" target="_blank">Live</a>-->
+                <br/>
+                <div class="text-center">
+                    <h1 style="text-transform: uppercase;">Bison Hacks</h1>
+                    <h3 style="text-transform: uppercase;">Howard University School of Business</h3>
+                    <h3 style="text-transform: uppercase;">February 28-29, 2020</h3>
+                    <br/>
+                    <ul class="list-inline banner-social-buttons">
+                        <li><a href="http://bit.ly/2F32kR3"><i class="fab fa-twitter fa-3x" style="color: #BF2632 !important;"></i></a></li>
+                        <li><a href="http://bit.ly/2soDfx2"><i class="fab fa-facebook fa-3x" style="color: #BF2632 !important;/"></i></a></li>
+                        <li><a href="http://bit.ly/2CjzSrd"><i class="fab fa-instagram fa-3x" style="color: #BF2632 !important;"></i></a></li>
+                    </ul>
+                    <br/>
+                    <a class="btn btn-default btn-lg sign-up-btn" href="http://bit.ly/2ScXV6h" data-mode="popup"  data-submit-close-delay="5" target="_blank">Register </a>
+    <!--            <a class="btn btn-default btn-lg sign-up-btn" href="http://bit.ly/2HIwTzs" target="_blank">Join Slack </a>-->
+    <!--            <a class="btn btn-default btn-lg sign-up-btn" href="pages/live.html" target="_blank">Live</a>-->
+                </div>
             </div>
         </div>
+    </div>
 </section>
+<!-- Intro Header -->
+
+<br id="info"/>
+<br/>
+<br/>
+<br />
 
 <section id="map-section">
-    <div class="container">
+    <div  class="container" style="padding-left: 0px;">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6" style="padding-top: 70px;">
                 <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h3>Howard University Official Annual Hackathon</h3>
-                        <h4> BISON HACKS </h4>
-                    </div>
+                    <h3>Howard University Official Annual Hackathon</h3>
                     <label>WHERE</label>
-                    <p>Inclusive Innovation Incubator Center <br/> 2301 Georgia Avene NW Washington, DC 20001</p>
+                    <p>Coming Soon!</p>
 
                     <label>START</label>
-                    <p>March 29, 2019 5:00PM </p>
+                    <p>February 28, 2020 5:00PM </p>
 
                     <label>END</label>
-                    <p>March 30, 2019 6:30PM </p>
+                    <p>February 29, 2020 6:30PM </p>
 
                     <label>WHO</label>
-                    <p>For students in the DMV area and Howard University students</p>
+                    <p>For college students in the DMV area and Howard University students</p>
                     <br/>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6" style="padding-left: 0px;">
                 <div id="map"></div>
             </div>
         </div>
@@ -193,22 +201,22 @@
             <div class="col-md-6 center">
                 <table>
                     <tr>
-                        <th>Friday, March 29, 2019</th>
+                        <th>Friday, February 28, 2020</th>
                     </tr>
                     <tr>
-                        <td><span>4:00 PM </span> | Registration Open</td>
+                        <td><span>4:00 PM </span> |  Registration and Networking</td>
                     </tr>
                     <tr>
-                        <td><span>5:00 PM </span> | Networking and Dinner Served</td>
+                        <td><span>5:00 PM </span> | Dinner Served</td>
                     </tr>
                     <tr>
-                        <td><span>5:30 PM </span> | Open Ceremony</td>
+                        <td><span>5:30 PM </span> | Open Ceremony (Sponsor Remarks)</td>
                     </tr>
                     <tr>
-                        <td><span>6:00 PM </span> | Hacking Begins</td>
+                        <td><span>6:00 PM </span> | Coding Begins</td>
                     </tr>
                     <tr>
-                        <td><span>10:30 PM </span> | Midnight Snack</td>
+                        <td><span>10:30 PM </span> | Late Night Snack</td>
                     </tr>
                     <tr>
                         <td><span>11:00 PM</span> | Slideshare Karaoke</td>
@@ -219,13 +227,13 @@
             <div class="col-md-6 center">
                 <table>
                     <tr>
-                        <th>Saturday, March 30, 2019</th>
+                        <th>Saturday, February 29, 2020</th>
                     </tr>
                     <tr>
                         <td><span>8:00 AM</span> | Breakfast Served</td>
                     </tr>
                     <tr>
-                        <td><span>8:30 AM</span> | Hacking Resumes</td>
+                        <td><span>8:30 AM</span> | Coding Resumes</td>
                     </tr>
                     <tr>
                         <td><span>11:30 AM</span> | Lunch Served</td>
@@ -250,10 +258,51 @@
         </div>
     </div>
 </section>
+
+<br/>
+<br/>
 <br/>
 <br/>
 <br/>
 
+<section>
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12 text-left">
+                <h1>Prizes</h1>
+            </div>
+            <div class="col-lg-3" id="firstplace">
+                <i class="fas fa-trophy fa-5x"></i>
+                <h2>1st Place</h2>
+                <h3>$6,000</h3>
+            </div>
+            <div class="col-lg-3" id="secondplace">
+                <i class="fas fa-trophy fa-5x"></i>
+
+                <h2>2nd Place</h2>
+                <h3>$3,500</h3>
+
+            </div>
+            <div class="col-lg-3" id="thirdplace">
+                <i class="fas fa-trophy fa-5x"></i>
+
+                <h2>3rd Place </h2>
+                <h3>$2,000</h3>
+            </div>
+            <div class="col-lg-3" id="innovation">
+                <i class="fas fa-lightbulb fa-5x"></i>
+                <h2>Best Innovation</h2>
+                <h3>$1,000</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 <section id="faq" data-spy="scroll">
     <div class="container">
         <div class="row">
@@ -307,7 +356,7 @@
                             </div>
                             <div class="col-lg-4">
                                 <label>Do you have a Code of Conduct?</label>
-                                <p>Yes! Check out our <a href="">Code of Conduct</a>.
+                                <p>Yes! Check out our <a href="./docs/Code%20Of%20Conduct.pdf">Code of Conduct</a>.
                             </div>
                         </div>
                     </div>
@@ -331,7 +380,7 @@
                         <div class="row">
                             <div class="col-lg-4">
                                 <label>How many students per a team?</label>
-                                <p>There can be a maximum of 4 students for a team.</p>
+                                <p>There can be a maximum of 5 students for a team.</p>
                             </div>
                             <div class="col-lg-4">
                                 <label>What if I can't find a team?</label>
@@ -355,7 +404,7 @@
                             </div>
                             <div class="col-lg-4">
                                 <label>Where do we submit our project?</label>
-                                <p>All projects must be submitted into our Bison Hacks DevPost by March 30, 2019 at 1:30PM.</p>
+                                <p>All projects must be submitted into our Bison Hacks DevPost by February 29, 2020 at 1:30PM.</p>
                             </div>
                             <div class="col-lg-4">
                                 <label>What format can our team project be?</label>
@@ -443,11 +492,11 @@
                         <div class="row">
                             <div class="col-lg-4">
                                 <label>How do I sponsor this event?</label>
-                                <p>First! Thank you for wishing to sponsor our hackathon! To sponsor our event you can view our sponsorhsip package here and send an email to bisonhacks@gmail.com.</p>
+                                <p>First! Thank you for wishing to sponsor our hackathon! To sponsor our event you can view our sponsorship package here and send an email to bisonhacks@gmail.com.</p>
                             </div>
                             <div class="col-lg-4">
                                 <label>What does the funds cover for this event?</label>
-                                <p>The funds goes towards food, prizes and the swag for the hackathon. We go into more detail within our sponsorship package <a href="">here</a>.</p>
+                                <p>The funds goes towards food, prizes and the swag for the hackathon. We go into more detail within our sponsorship package <a href="./docs/BisonHacks%202020%20Sponsorship%20Information.pdf">here</a>.</p>
                             </div>
                         </div>
                     </div>
@@ -467,6 +516,11 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <img src="img/GM_Foundation.png" style="padding-bottom: 1px !important;"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <img src="img/boeing.png" style="padding-bottom: 1px !important;"/>
             </div>
         </div>
 
@@ -490,9 +544,92 @@
         <p>Copyright &copy; Howard University Department of Computer Information Systems 2020</p>
     </div>
 </footer>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
+    var map = new mapboxgl.Map({
+        style: 'mapbox://styles/mapbox/light-v9',
+        center: [-77.021680,38.920810],
+        zoom: 16.5,
+        pitch: 45,
+        bearing: -17.6,
+        container: 'map'
+    });
+
+    map.addControl(new mapboxgl.NavigationControl());
+
+    map.on('load', function() {
+        map.loadImage('img/bh2020thumb.png', function(error, image) {
+            if (error) throw error;
+            map.addImage('BisonHead', image);
+            map.addLayer({
+                "id": "points",
+                "type": "symbol",
+                "source": {
+                    "type": "geojson",
+                    "data": {
+                        "type": "FeatureCollection",
+                        "features": [{
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [-77.021680,38.920810]
+                            }
+                        }]
+                    }
+                },
+                "layout": {
+                    "icon-image": "BisonHead",
+                    "icon-size": 0.25
+                }
+            });
+        });
+
+
+        // Insert the layer beneath any symbol layer.
+        var layers = map.getStyle().layers;
+
+        var labelLayerId;
+        for (var i = 0; i < layers.length; i++) {
+            if (layers[i].type === 'symbol' && layers[i].layout['text-field']) {
+                labelLayerId = layers[i].id;
+                break;
+            }
+        }
+
+        map.addLayer({
+            'id': '3d-buildings',
+            'source': 'composite',
+            'source-layer': 'building',
+            'filter': ['==', 'extrude', 'true'],
+            'type': 'fill-extrusion',
+            'minzoom': 15,
+            'paint': {
+                'fill-extrusion-color': '#BF2632',
+
+                // use an 'interpolate' expression to add a smooth transition effect to the
+                // buildings as the user zooms in
+                'fill-extrusion-height': [
+                    "interpolate", ["linear"], ["zoom"],
+                    15, 0,
+                    15.05, ["get", "height"]
+                ],
+                'fill-extrusion-base': [
+                    "interpolate", ["linear"], ["zoom"],
+                    15, 0,
+                    15.05, ["get", "min_height"]
+                ],
+                'fill-extrusion-opacity': .9
+            }
+        }, labelLayerId);
+
+
+    });
+
+</script>
 </body>
 
 </html>

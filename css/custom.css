@@ -1,17 +1,18 @@
 h1, h2 {
     font-family: 'Open Sans', cursive !important;
     font-weight: bolder !important;
-    line-height: 46px;
+    /*line-height: 46px;*/
     margin: 0 0 23px 0;
-    color: #337ab7 !important;
+    color: #282E75 !important;
 }
 
 h1 {
-    font-size: 95px !important;
+    font-size: 50px !important;
+    font-weight: bold;
 }
 
 h2 {
-    font-size: 46px !important;
+    font-size: 15px !important;
     font-weight: bold;
 
 }
@@ -20,7 +21,7 @@ h3 {
     font-family: 'Open Sans', sans-serif !important;
     font-size: 16px;
     font-weight: bold !important;
-    color: #444242 !important;
+    color: #000001 !important;
 }
 
 html {
@@ -35,19 +36,25 @@ body {
     padding-top: 80px;
 }
 
-nav {
-    background-color: #ffffff;
-}
-
 p {
     font-family: 'Open Sans', sans-serif !important;
     color: #444242 !important;
 }
 
+/*
+    NAVIGATION
+*/
+
+nav {
+    top: 50px !important;
+    background-color: white;
+}
+
 .navbar-nav>li>a {
     font-family: 'Open Sans', sans-serif;
-    font-size: 40px;
-    /* color: #163962; */
+    font-size: 25px;
+    font-weight: bolder;
+    color: #282E75;
 }
 
 nav>li>a:focus, .nav>li>a:hover {
@@ -55,29 +62,15 @@ nav>li>a:focus, .nav>li>a:hover {
     background-color: transparent !important;
 }
 
-.information {
-    padding-top: 200px;
+.navbar .navbar-nav {
+    display: inline-block !important;
+    float: none !important;
 }
 
-.fs {
-    font-size: 16px;
+.navbar .navbar-collapse {
+    text-align: center !important;
 }
 
-.fm {
-    font-size: 32px;
-}
-
-.fl {
-    font-size: 64px;
-}
-
-.sign-up-btn {
-    font-family: 'Open Sans', sans-serif !important;
-    font-weight: bold;
-    background-color: #F45254 !important;
-    color: #ffffff !important;
-    border-style: none !important;
-}
 
 .nav-tabs {
     border-bottom: none !important;
@@ -93,6 +86,20 @@ nav>li>a:focus, .nav>li>a:hover {
 .nav-tabs>li>a:hover {
     border-color: transparent !important;
 }
+
+.information {
+    padding-top: 200px;
+}
+
+
+.sign-up-btn {
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: bold;
+    background-color: #BF2632 !important;
+    color: #ffffff !important;
+    border-style: none !important;
+}
+
 
 label {
     display: inline-block;
@@ -142,7 +149,7 @@ section#sponsors {
 }
 
 #info h3 {
-    font-family: 'Open Sans', cursive !important;
+    font-family: 'Open Sans', sans-serif !important;
     color: #337ab7 !important;
     font-weight: bolder;
 }
@@ -152,6 +159,65 @@ svg {color: #F45254 !important;}
 #firstplace .fa-5x {
     font-size: 10em !important;
     color: #D4AF37 !important;
+}
+
+#firstplace {
+    background-color: #BF2632;
+    height: 600px;
+    padding-top: 190px;
+}
+#secondplace{
+    background-color: #282E75;
+    height: 600px;
+    padding-top: 190px;
+}
+
+#thirdplace{
+    background-color: #337ab7;
+    height: 600px;
+    padding-top: 190px;
+}
+
+#innovation{
+    background-color: #E8F1F6;
+    height: 600px;
+    padding-top: 190px;
+}
+
+#firstplace h2 {
+     color: #ffffff !important;
+     font-size: larger !important;
+ }
+
+#firstplace h3 {
+    color: #ffffff !important;
+}
+
+#secondplace h2 {
+    color: #ffffff !important;
+    font-size: larger !important;
+}
+
+#secondplace h3 {
+    color: #ffffff !important;
+}
+
+#thirdplace h2 {
+    color: #ffffff !important;
+    font-size: larger !important;
+}
+
+#thirdplace h3 {
+    color: #ffffff !important;
+}
+
+#innovation h2 {
+    color: #000000 !important;
+    font-size: larger !important;
+}
+
+#innovation h3 {
+    color: #000000 !important;
 }
 
 #secondplace .fa-5x {
@@ -177,16 +243,66 @@ section#info {
     padding-bottom: 100px;
 }
 
+
+/*
+    FAQ SECTION
+*/
 section#faq {
     padding-top: 100px;
     padding-bottom: 100px;
 }
 
+#general-tab {
+    color: #BF2632;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+#applying-tab {
+    color: #BF2632;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+#rules-tab{
+    color: #BF2632;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+#logistics-tab{
+    color: #BF2632;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+#mentor-tab {
+    color: #BF2632;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+#sponsorsinfo-tab{
+    color: #BF2632;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+#myTabContent  label {
+    color: #337ab7;
+    font-family: "Open Sans", sans-serif;
+}
+
+#myTabContent label p {
+    color: #000000;
+    font-family: "Open Sans", sans-serif;
+}
+
+/*
+    SCHEDULE SECTION
+*/
 td {
     padding:  10px 0px 15px 15px !important;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
-    color: #444242;
+    color: #000000;
 }
 
 td span {
@@ -196,7 +312,7 @@ td span {
 th {
     font-size: 35px;
     font-family: 'Open Sans', cursive;
-    color: #F45254;
+    color: #BF2632;
     font-weight: bold;
 }
 
@@ -206,4 +322,50 @@ th {
 
 #judges h3 {
     color: #337ab7 !important;
+}
+
+
+/*
+    MAP SECTION
+*/
+
+#map {
+    width: 150%;
+    height: 700px !important;
+}
+
+#map-section{
+    background-color: #026CA7;
+}
+
+#map-section h3 {
+    font-family: 'Open Sans', sans-serif !important;
+    color: #ffffff !important;
+    font-size: 35px;
+
+}
+
+.mapboxgl-map {
+    width: 150% !important;
+}
+canvas.mapboxgl-canvas{
+    width:150% !important;
+}
+
+#map-section h4 {
+    color: #ffffff !important;
+}
+
+#map-section label {
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: bolder;
+    font-size: 35px;
+    color: #ffffff !important;
+}
+
+#map-section p {
+    font-size: 20px;
+    color: #000000 !important;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
 }
